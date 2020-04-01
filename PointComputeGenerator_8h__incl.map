@@ -1,0 +1,18 @@
+<map id="PointComputeGenerator.h" name="PointComputeGenerator.h">
+<area shape="rect" id="node2" href="$ComputeGenerator_8h.html" title="The core visitor framework for code generation. " alt="" coords="1251,80,1393,107"/>
+<area shape="rect" id="node4" href="$FunctionTypes_8h.html" title="Contains frameworks for creating custom AX functions which can be registered within the FunctionRegis..." alt="" coords="876,253,994,280"/>
+<area shape="rect" id="node5" href="$Types_8h.html" title="Consolidated llvm types for most supported types. " alt="" coords="716,427,861,469"/>
+<area shape="rect" id="node26" href="$Utils_8h.html" title="Utility code generation methods for performing various llvm operations. " alt="" coords="189,337,334,378"/>
+<area shape="rect" id="node45" href="$AttributeRegistry_8h.html" title="These classes contain lists of expected attributes and volumes which are populated by compiler during..." alt="" coords="2152,155,2297,197"/>
+<area shape="rect" id="node3" href="$FunctionRegistry_8h.html" title="Contains the global function registration definition which described all available user front end fun..." alt="" coords="1412,163,1543,189"/>
+<area shape="rect" id="node37" href="$SymbolTable_8h.html" title="Contains the symbol table which holds mappings of variables names to llvm::Values. " alt="" coords="1811,253,1921,280"/>
+<area shape="rect" id="node39" href="$AST_8h.html" title="Provides the definition for every abstract and concrete derived class which represent a particular ab..." alt="" coords="2223,435,2378,461"/>
+<area shape="rect" id="node41" href="$Visitor_8h.html" title="Contains the AX AST Node Visitor, providing default and customizable traversal and visitation methods..." alt="" coords="2099,344,2265,371"/>
+<area shape="rect" id="node35" href="$CompilerOptions_8h.html" title="openvdb_ax/compiler\l/CompilerOptions.h" alt="" coords="1567,246,1711,287"/>
+<area shape="rect" id="node8" href="$version_8h.html" title="Library and file format version numbers. " alt="" coords="1867,592,2017,619"/>
+<area shape="rect" id="node28" href="$ConstantFolding_8h.html" title="openvdb_ax/codegen\l/ConstantFolding.h" alt="" coords="917,337,1062,378"/>
+<area shape="rect" id="node6" href="$Tokens_8h.html" title="Various function and operator tokens used throughout the AST and code generation. ..." alt="" coords="1631,517,1802,544"/>
+<area shape="rect" id="node15" href="$Literals_8h.html" title="openvdb_ax/ast/Literals.h" alt="" coords="2081,517,2251,544"/>
+<area shape="rect" id="node10" href="$Exceptions_8h.html" title="openvdb_ax/Exceptions.h" alt="" coords="675,592,846,619"/>
+<area shape="rect" id="node46" href="$Scanners_8h.html" title="openvdb_ax/ast/Scanners.h" alt="" coords="2133,253,2317,280"/>
+</map>

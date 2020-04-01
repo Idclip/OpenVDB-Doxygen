@@ -1,0 +1,11 @@
+<map id="FunctionRegistry.h" name="FunctionRegistry.h">
+<area shape="rect" id="node2" href="$FunctionTypes_8h.html" title="Contains frameworks for creating custom AX functions which can be registered within the FunctionRegis..." alt="" coords="754,88,872,115"/>
+<area shape="rect" id="node3" href="$Types_8h.html" title="Consolidated llvm types for most supported types. " alt="" coords="870,262,1015,303"/>
+<area shape="rect" id="node6" href="$version_8h.html" title="Library and file format version numbers. " alt="" coords="108,427,257,453"/>
+<area shape="rect" id="node33" href="$CompilerOptions_8h.html" title="openvdb_ax/compiler\l/CompilerOptions.h" alt="" coords="1465,81,1609,122"/>
+<area shape="rect" id="node24" href="$Utils_8h.html" title="Utility code generation methods for performing various llvm operations. " alt="" coords="1190,171,1335,213"/>
+<area shape="rect" id="node26" href="$ConstantFolding_8h.html" title="openvdb_ax/codegen\l/ConstantFolding.h" alt="" coords="358,171,503,213"/>
+<area shape="rect" id="node4" href="$Tokens_8h.html" title="Various function and operator tokens used throughout the AST and code generation. ..." alt="" coords="1381,352,1552,379"/>
+<area shape="rect" id="node13" href="$Literals_8h.html" title="openvdb_ax/ast/Literals.h" alt="" coords="283,352,453,379"/>
+<area shape="rect" id="node8" href="$Exceptions_8h.html" title="openvdb_ax/Exceptions.h" alt="" coords="1505,427,1676,453"/>
+</map>

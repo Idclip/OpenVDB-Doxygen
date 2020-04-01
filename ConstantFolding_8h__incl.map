@@ -1,0 +1,7 @@
+<map id="ConstantFolding.h" name="ConstantFolding.h">
+<area shape="rect" id="node2" href="$Types_8h.html" title="Consolidated llvm types for most supported types. " alt="" coords="794,81,939,122"/>
+<area shape="rect" id="node3" href="$Tokens_8h.html" title="Various function and operator tokens used throughout the AST and code generation. ..." alt="" coords="1306,171,1477,197"/>
+<area shape="rect" id="node12" href="$Literals_8h.html" title="openvdb_ax/ast/Literals.h" alt="" coords="100,171,271,197"/>
+<area shape="rect" id="node7" href="$Exceptions_8h.html" title="openvdb_ax/Exceptions.h" alt="" coords="607,245,779,272"/>
+<area shape="rect" id="node5" href="$version_8h.html" title="Library and file format version numbers. " alt="" coords="424,245,573,272"/>
+</map>
