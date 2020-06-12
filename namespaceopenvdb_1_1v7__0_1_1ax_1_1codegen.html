@@ -132,6 +132,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The base/abstract representation of an AX function. Derived classes must implement the <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1Function.html#ad2e75a6e74e69d1563a9d41d626b30a0" title="Populate a vector of llvm::Types which describe this function signature. This method is used by Funct...">Function::types</a> call to describe their signature.  <a href="structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1Function.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1FunctionBuilder.html">FunctionBuilder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1FunctionBuilder.html" title="The FunctionBuilder class provides a builder pattern framework to allow easy and valid construction o...">FunctionBuilder</a> class provides a builder pattern framework to allow easy and valid construction of AX functions. There are a number of complex tasks which may need to be performed during construction of C or IR function which are delegated to this builder, whilst ensuring that the constructed functions are guaranteed to be valid.  <a href="structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1FunctionBuilder.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1FunctionGroup.html">FunctionGroup</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">todo  <a href="structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1FunctionGroup.html#details">More...</a><br /></td></tr>
@@ -395,6 +396,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a9c36623d3d4c88d720fbb67c7cd2e07e"><td class="memItemLeft" align="right" valign="top">llvm::Value *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceopenvdb_1_1v7__0_1_1ax_1_1codegen.html#a9c36623d3d4c88d720fbb67c7cd2e07e">arrayPackCast</a> (std::vector&lt; llvm::Value * &gt; &amp;values, llvm::IRBuilder&lt;&gt; &amp;builder)</td></tr>
 <tr class="memdesc:a9c36623d3d4c88d720fbb67c7cd2e07e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack a vector of loaded llvm scalar values into a new array of equal size and return a pointer to the newly allocated array. arrayPackCast first checks all the contained types in values and casts all types to the highest order type present. All llvm values in values are expected to be loaded scalar types.  <a href="#a9c36623d3d4c88d720fbb67c7cd2e07e">More...</a><br /></td></tr>
 <tr class="separator:a9c36623d3d4c88d720fbb67c7cd2e07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35b21cf2a5ccbf5348432edf59488d83"><td class="memItemLeft" align="right" valign="top">llvm::Value *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceopenvdb_1_1v7__0_1_1ax_1_1codegen.html#a35b21cf2a5ccbf5348432edf59488d83">scalarToMatrix</a> (llvm::Value *scalar, llvm::IRBuilder&lt;&gt; &amp;builder, const size_t dim=3)</td></tr>
+<tr class="separator:a35b21cf2a5ccbf5348432edf59488d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="af036ec3b03ba7981a9af071bce3c7648"></a>
@@ -2071,6 +2074,46 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a35b21cf2a5ccbf5348432edf59488d83"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">llvm::Value* openvdb::v7_0::ax::codegen::scalarToMatrix </td>
+          <td>(</td>
+          <td class="paramtype">llvm::Value *&#160;</td>
+          <td class="paramname"><em>scalar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">llvm::IRBuilder&lt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>builder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>dim</em> = <code>3</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

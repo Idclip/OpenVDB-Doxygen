@@ -85,6 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="unionAXSTYPE-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -94,6 +95,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="axparser_8h_source.html">axparser.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a796b7e3dbda1ed54fd068f0c5eb6def9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionAXSTYPE.html#a796b7e3dbda1ed54fd068f0c5eb6def9">ExpList</a> = std::vector&lt; openvdb::ax::ast::Expression * &gt;</td></tr>
+<tr class="memdesc:a796b7e3dbda1ed54fd068f0c5eb6def9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary storage for comma separated expressions.  <a href="#a796b7e3dbda1ed54fd068f0c5eb6def9">More...</a><br /></td></tr>
+<tr class="separator:a796b7e3dbda1ed54fd068f0c5eb6def9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ae1adbce218e7a9d09164012443191d24"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionAXSTYPE.html#ae1adbce218e7a9d09164012443191d24">string</a></td></tr>
@@ -112,8 +119,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a5d59dea7e3b5ff84b13781f92ade6a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0df7af6882a486d05f07e917f7c85509"><td class="memItemLeft" align="right" valign="top">openvdb::ax::ast::Expression *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionAXSTYPE.html#a0df7af6882a486d05f07e917f7c85509">expression</a></td></tr>
 <tr class="separator:a0df7af6882a486d05f07e917f7c85509"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71c7730a76ff7710c2f3d3fc8e4c769a"><td class="memItemLeft" align="right" valign="top">openvdb::ax::ast::ExpressionList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionAXSTYPE.html#a71c7730a76ff7710c2f3d3fc8e4c769a">expressionlist</a></td></tr>
-<tr class="separator:a71c7730a76ff7710c2f3d3fc8e4c769a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a229fd6f7c12f6684e23bea7cb4542c47"><td class="memItemLeft" align="right" valign="top">openvdb::ax::ast::FunctionCall *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionAXSTYPE.html#a229fd6f7c12f6684e23bea7cb4542c47">function</a></td></tr>
+<tr class="separator:a229fd6f7c12f6684e23bea7cb4542c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a729017d67e123f7e3fba811e1733cb62"><td class="memItemLeft" align="right" valign="top">openvdb::ax::ast::ArrayPack *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionAXSTYPE.html#a729017d67e123f7e3fba811e1733cb62">arraypack</a></td></tr>
+<tr class="separator:a729017d67e123f7e3fba811e1733cb62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb44272d19bffabf6b7289f75b4943b7"><td class="memItemLeft" align="right" valign="top">openvdb::ax::ast::CommaOperator *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionAXSTYPE.html#abb44272d19bffabf6b7289f75b4943b7">comma</a></td></tr>
+<tr class="separator:abb44272d19bffabf6b7289f75b4943b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79e7ac156c4fee49a1c03b140f0fe113"><td class="memItemLeft" align="right" valign="top">openvdb::ax::ast::Variable *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionAXSTYPE.html#a79e7ac156c4fee49a1c03b140f0fe113">variable</a></td></tr>
 <tr class="separator:a79e7ac156c4fee49a1c03b140f0fe113"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1311bd2c529a5856af6669403e6c7cd"><td class="memItemLeft" align="right" valign="top">openvdb::ax::ast::ExternalVariable *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionAXSTYPE.html#aa1311bd2c529a5856af6669403e6c7cd">external</a></td></tr>
@@ -124,8 +135,37 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a435f4476d59d69e9ed673a54f9812f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a4e3753ea6a937aa277da006a00ca94"><td class="memItemLeft" align="right" valign="top">openvdb::ax::ast::Local *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionAXSTYPE.html#a2a4e3753ea6a937aa277da006a00ca94">local</a></td></tr>
 <tr class="separator:a2a4e3753ea6a937aa277da006a00ca94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a926607e553cd7f7624ea4b58532f5252"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unionAXSTYPE.html#a796b7e3dbda1ed54fd068f0c5eb6def9">ExpList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionAXSTYPE.html#a926607e553cd7f7624ea4b58532f5252">explist</a></td></tr>
+<tr class="separator:a926607e553cd7f7624ea4b58532f5252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a796b7e3dbda1ed54fd068f0c5eb6def9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="unionAXSTYPE.html#a796b7e3dbda1ed54fd068f0c5eb6def9">ExpList</a> =  std::vector&lt;openvdb::ax::ast::Expression*&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Temporary storage for comma separated expressions. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a729017d67e123f7e3fba811e1733cb62"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">openvdb::ax::ast::ArrayPack* arraypack</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="acb7a2a6eee80a782e3752914dea0120a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -150,12 +190,36 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="abb44272d19bffabf6b7289f75b4943b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">openvdb::ax::ast::CommaOperator* comma</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a435f4476d59d69e9ed673a54f9812f57"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">openvdb::ax::ast::DeclareLocal* declare_local</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a926607e553cd7f7624ea4b58532f5252"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="unionAXSTYPE.html#a796b7e3dbda1ed54fd068f0c5eb6def9">ExpList</a>* explist</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -174,24 +238,24 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a71c7730a76ff7710c2f3d3fc8e4c769a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">openvdb::ax::ast::ExpressionList* expressionlist</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="aa1311bd2c529a5856af6669403e6c7cd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">openvdb::ax::ast::ExternalVariable* external</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a229fd6f7c12f6684e23bea7cb4542c47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">openvdb::ax::ast::FunctionCall* function</td>
         </tr>
       </table>
 </div><div class="memdoc">

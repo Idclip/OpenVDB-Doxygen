@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['last_5fcolumn',['last_column',['../structAXLTYPE.html#ae154590bbba7a0f94bff8607063dc9b9',1,'AXLTYPE']]],
-  ['last_5fline',['last_line',['../structAXLTYPE.html#a7375684fb330213a07a5fe8471ecb162',1,'AXLTYPE']]],
-  ['local',['local',['../unionAXSTYPE.html#a2a4e3753ea6a937aa277da006a00ca94',1,'AXSTYPE']]]
+  ['index',['index',['../unionAXSTYPE.html#a3e39e0381ab73d88040027129d7555bb',1,'AXSTYPE']]],
+  ['issupported',['IsSupported',['../structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Value.html#a1ff275528646fd0ab1a970af54de560f',1,'openvdb::v7_0::ax::ast::Value']]]
 ];

@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>ConditionalStatements represents all combinations of 'if', 'else' and 'else if' syntax and semantics. A single <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a> only ever represents up to two branches; an 'if' (then) and an optional 'else'. Multiple ConditionalStatements are nested within the second 'else' branch to support 'else if' logic. As well as both 'if' and 'else' branches, a <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a> also holds an <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Expression.html" title="Expressions are comprised of full or potentially partial parts of a full statement that may not neces...">Expression</a> related to its primary condition.  
+<p>ConditionalStatements represents all combinations of 'if', 'else' and 'else if' syntax and semantics. A single <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a> only ever represents up to two branches; an 'if' (true) and an optional 'else' (false). ConditionalStatements are nested within the second 'else' branch to support 'else if' logic. As well as both 'if' and 'else' branches, a <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a> also holds an <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Expression.html" title="Expressions are comprised of full or potentially partial parts of a full statement that may not neces...">Expression</a> related to its primary condition.  
  <a href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="AST_8h_source.html">AST.h</a>&gt;</code></p>
@@ -128,9 +128,9 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16a6e3c9853eac7f791316173112a4c920d">TreeNode</a>, 
 <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16a48e5c1876288bf22cd46f986e38adf02">StatementListNode</a>, 
 <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16a43780fadfdb2235144acada7dbe105c7">BlockNode</a>, 
-<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16ae6485f7c0124c2ee5b208ef75237dfcc">ExpressionListNode</a>, 
+<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16a4aab5c0f2459150efa56479af2eb819f">ConditionalStatementNode</a>, 
 <br />
-&#160;&#160;<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16a4aab5c0f2459150efa56479af2eb819f">ConditionalStatementNode</a>, 
+&#160;&#160;<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16a9c67b92cc82860adc32a7bf2c3bdc31a">CommaOperatorNode</a>, 
 <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16a211255852991e0aa4bc65fc0efb5308d">LoopNode</a>, 
 <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16abdc96277641e4564f49f05fd3332a3d4">KeywordNode</a>, 
 <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16aeda94965a49b65abcb13ab789c6f0ed4">AssignExpressionNode</a>, 
@@ -138,24 +138,25 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16ae9a53f544375844ca76604ae5f2ca791">CrementNode</a>, 
 <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16a5eb95c2e659ce03204e6c0b0b0c87740">UnaryOperatorNode</a>, 
 <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16a1c1bb5e6682d57a60288fb496aeff4cf">BinaryOperatorNode</a>, 
-<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16af9a5d82c6573803b099c3adfc4b9b20c">CastNode</a>, 
+<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16a050af244605ad1322fc8e7b5a0179f1b">TernaryOperatorNode</a>, 
 <br />
-&#160;&#160;<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16a7b3e1e1d3d5d99fc9af0ba930f3db50d">AttributeNode</a>, 
+&#160;&#160;<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16af9a5d82c6573803b099c3adfc4b9b20c">CastNode</a>, 
+<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16a7b3e1e1d3d5d99fc9af0ba930f3db50d">AttributeNode</a>, 
 <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16a5eb065001855bf5fee13c8f1c40348ed">FunctionCallNode</a>, 
 <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16a9501cd3ee5528bcca1e51ac8f0966994">ExternalVariableNode</a>, 
-<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16ac8a7cf9d5914e72e1b0d1d6b1209ab24">DeclareLocalNode</a>, 
 <br />
-&#160;&#160;<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16a641de2f20e7205326940bae22fed24d3">ArrayPackNode</a>, 
+&#160;&#160;<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16ac8a7cf9d5914e72e1b0d1d6b1209ab24">DeclareLocalNode</a>, 
+<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16a641de2f20e7205326940bae22fed24d3">ArrayPackNode</a>, 
 <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16aa4c2677554db379f707701e1e033b766">ArrayUnpackNode</a>, 
 <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16a58e08f3e77b3e58192caac0a9a4c3465">LocalNode</a>, 
-<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16ad367abc3c089565a6428ca827885f831">ValueBoolNode</a>, 
 <br />
-&#160;&#160;<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16a86ec9f75634eb04e475dba4ee93933fb">ValueInt16Node</a>, 
+&#160;&#160;<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16ad367abc3c089565a6428ca827885f831">ValueBoolNode</a>, 
+<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16a86ec9f75634eb04e475dba4ee93933fb">ValueInt16Node</a>, 
 <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16a764ee55f09a4bb6aac2eac083df73323">ValueInt32Node</a>, 
 <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16aee71e3911c1b181f2d37f99668f44fc5">ValueInt64Node</a>, 
-<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16ada29dd0c7c5827571517da57d290f7ca">ValueFloatNode</a>, 
 <br />
-&#160;&#160;<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16ad42b26e9f262c9059e38424d71a38d60">ValueDoubleNode</a>, 
+&#160;&#160;<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16ada29dd0c7c5827571517da57d290f7ca">ValueFloatNode</a>, 
+<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16ad42b26e9f262c9059e38424d71a38d60">ValueDoubleNode</a>, 
 <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16aa76996244034142252ec475e159c26bb">ValueStrNode</a>
 <br />
  }<tr class="memdesc:acac9cbaeea226ed297804c012dc12b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated list of node types for all concrete node types. These can be used for faster evaluation of a given concrete node using the virtual function table via <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#ab703c8a88dcde2076cb089c07af0cc5c" title="Virtual method for accessing node type information. ">Node::nodetype()</a> rather than performing a dynamic_cast/calling <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#aa6af20b4807e0ff1021f08015a0c8779" title="Query whether or not this node is of a specific (derived) type. This method should be used to check i...">Node::isType</a>.  <a href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16">More...</a><br /></td></tr>
@@ -166,9 +167,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aef30e85976ed0eb6248616364834c793"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html#aef30e85976ed0eb6248616364834c793">ConditionalStatement</a> (<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Expression.html">Expression</a> *conditional, <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html">Block</a> *<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html#ac0c600db7ed8ad2b722fb2f4da09c79a">thenBranch</a>, <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html">Block</a> *<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html#ab96e6121612607ccf1f37ff556d3b4c8">elseBranch</a>=nullptr)</td></tr>
-<tr class="memdesc:aef30e85976ed0eb6248616364834c793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a> with an <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Expression.html" title="Expressions are comprised of full or potentially partial parts of a full statement that may not neces...">Expression</a> representing the primary condition, a <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html" title="A Block node represents a scoped list of statements. It may comprise of 0 or more statements...">Block</a> representing the 'then' branch and an optional <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html" title="A Block node represents a scoped list of statements. It may comprise of 0 or more statements...">Block</a> representing the 'else' branch. Ownership of all arguments is transferred to the <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a>. All arguments have their parent data updated.  <a href="#aef30e85976ed0eb6248616364834c793">More...</a><br /></td></tr>
-<tr class="separator:aef30e85976ed0eb6248616364834c793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7191b51382c2c9a1876ee2dfb313e091"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html#a7191b51382c2c9a1876ee2dfb313e091">ConditionalStatement</a> (<a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Expression.html">Expression</a> *conditional, <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html">Block</a> *trueBlock, <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html">Block</a> *falseBlock=nullptr)</td></tr>
+<tr class="memdesc:a7191b51382c2c9a1876ee2dfb313e091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a> with an <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Expression.html" title="Expressions are comprised of full or potentially partial parts of a full statement that may not neces...">Expression</a> representing the primary condition, a <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html" title="A Block node represents a scoped list of statements. It may comprise of 0 or more statements...">Block</a> representing the 'true' branch and an optional <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html" title="A Block node represents a scoped list of statements. It may comprise of 0 or more statements...">Block</a> representing the 'false' branch. Ownership of all arguments is transferred to the <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a>. All arguments have their parent data updated.  <a href="#a7191b51382c2c9a1876ee2dfb313e091">More...</a><br /></td></tr>
+<tr class="separator:a7191b51382c2c9a1876ee2dfb313e091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee691f9e6a7c3bc886686a2eeac23e1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html#aee691f9e6a7c3bc886686a2eeac23e1e">ConditionalStatement</a> (const <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html">ConditionalStatement</a> &amp;other)</td></tr>
 <tr class="memdesc:aee691f9e6a7c3bc886686a2eeac23e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deep copy constructor for an <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a>, performing a deep copy on the condition and both held branches (Blocks), ensuring parent information is updated.  <a href="#aee691f9e6a7c3bc886686a2eeac23e1e">More...</a><br /></td></tr>
 <tr class="separator:aee691f9e6a7c3bc886686a2eeac23e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,21 +199,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a87ac5af79c8c0df3592f36a6caaad473"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html#a87ac5af79c8c0df3592f36a6caaad473">replacechild</a> (const size_t i, <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html">Node</a> *node) override final</td></tr>
 <tr class="memdesc:a87ac5af79c8c0df3592f36a6caaad473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method that attempted to replace a child at a given index with a provided node type.  <a href="#a87ac5af79c8c0df3592f36a6caaad473">More...</a><br /></td></tr>
 <tr class="separator:a87ac5af79c8c0df3592f36a6caaad473"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd16103c2ca5d655f80f8150cfa9f9f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html#abd16103c2ca5d655f80f8150cfa9f9f5">hasElseBranch</a> () const </td></tr>
-<tr class="memdesc:abd16103c2ca5d655f80f8150cfa9f9f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query if this <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a> has a valid 'else' branch.  <a href="#abd16103c2ca5d655f80f8150cfa9f9f5">More...</a><br /></td></tr>
-<tr class="separator:abd16103c2ca5d655f80f8150cfa9f9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad86a4a3ae930b359b82b39e7397ddd5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html#ad86a4a3ae930b359b82b39e7397ddd5d">hasFalse</a> () const </td></tr>
+<tr class="memdesc:ad86a4a3ae930b359b82b39e7397ddd5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query if this <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a> has a valid 'false' branch.  <a href="#ad86a4a3ae930b359b82b39e7397ddd5d">More...</a><br /></td></tr>
+<tr class="separator:ad86a4a3ae930b359b82b39e7397ddd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b5e940a4dfba685494c18995d5b04c7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html#a7b5e940a4dfba685494c18995d5b04c7">branchCount</a> () const </td></tr>
 <tr class="memdesc:a7b5e940a4dfba685494c18995d5b04c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the number of branches held by this <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a>. This is only ever 1 or 2.  <a href="#a7b5e940a4dfba685494c18995d5b04c7">More...</a><br /></td></tr>
 <tr class="separator:a7b5e940a4dfba685494c18995d5b04c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae40402b8ba4239a201d764829bb0e9b4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Expression.html">Expression</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html#ae40402b8ba4239a201d764829bb0e9b4">condition</a> () const </td></tr>
 <tr class="memdesc:ae40402b8ba4239a201d764829bb0e9b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access a const pointer to the ConditionalStatements condition as an abstract expression.  <a href="#ae40402b8ba4239a201d764829bb0e9b4">More...</a><br /></td></tr>
 <tr class="separator:ae40402b8ba4239a201d764829bb0e9b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0c600db7ed8ad2b722fb2f4da09c79a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html#ac0c600db7ed8ad2b722fb2f4da09c79a">thenBranch</a> () const </td></tr>
-<tr class="memdesc:ac0c600db7ed8ad2b722fb2f4da09c79a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access a const pointer to the ConditionalStatements 'then' branch as a <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html" title="A Block node represents a scoped list of statements. It may comprise of 0 or more statements...">Block</a>.  <a href="#ac0c600db7ed8ad2b722fb2f4da09c79a">More...</a><br /></td></tr>
-<tr class="separator:ac0c600db7ed8ad2b722fb2f4da09c79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab96e6121612607ccf1f37ff556d3b4c8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html#ab96e6121612607ccf1f37ff556d3b4c8">elseBranch</a> () const </td></tr>
-<tr class="memdesc:ab96e6121612607ccf1f37ff556d3b4c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access a const pointer to the ConditionalStatements 'else' branch as a <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html" title="A Block node represents a scoped list of statements. It may comprise of 0 or more statements...">Block</a>.  <a href="#ab96e6121612607ccf1f37ff556d3b4c8">More...</a><br /></td></tr>
-<tr class="separator:ab96e6121612607ccf1f37ff556d3b4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa41d920cddb375afa731d24ec1708ec5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html#aa41d920cddb375afa731d24ec1708ec5">trueBranch</a> () const </td></tr>
+<tr class="memdesc:aa41d920cddb375afa731d24ec1708ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access a const pointer to the ConditionalStatements 'true' branch as a <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html" title="A Block node represents a scoped list of statements. It may comprise of 0 or more statements...">Block</a>.  <a href="#aa41d920cddb375afa731d24ec1708ec5">More...</a><br /></td></tr>
+<tr class="separator:aa41d920cddb375afa731d24ec1708ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84853235c5da2ec0a8cf040aeb47e78c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html">Block</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html#a84853235c5da2ec0a8cf040aeb47e78c">falseBranch</a> () const </td></tr>
+<tr class="memdesc:a84853235c5da2ec0a8cf040aeb47e78c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access a const pointer to the ConditionalStatements 'false' branch as a <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html" title="A Block node represents a scoped list of statements. It may comprise of 0 or more statements...">Block</a>.  <a href="#a84853235c5da2ec0a8cf040aeb47e78c">More...</a><br /></td></tr>
+<tr class="separator:a84853235c5da2ec0a8cf040aeb47e78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Name/Type</div></td></tr>
 <tr class="memitem:aa6af20b4807e0ff1021f08015a0c8779"><td class="memTemplParams" colspan="2">template&lt;typename NodeT &gt; </td></tr>
 <tr class="memitem:aa6af20b4807e0ff1021f08015a0c8779"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#aa6af20b4807e0ff1021f08015a0c8779">isType</a> () const </td></tr>
@@ -235,8 +236,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ade468b936d43438b4fd722bea1243b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>ConditionalStatements represents all combinations of 'if', 'else' and 'else if' syntax and semantics. A single <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a> only ever represents up to two branches; an 'if' (then) and an optional 'else'. Multiple ConditionalStatements are nested within the second 'else' branch to support 'else if' logic. As well as both 'if' and 'else' branches, a <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a> also holds an <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Expression.html" title="Expressions are comprised of full or potentially partial parts of a full statement that may not neces...">Expression</a> related to its primary condition. </p>
-<dl class="section note"><dt>Note</dt><dd>The first 'if' branch is referred to as the 'then' branch. The second 'else' branch is referred to as the 'else' branch. </dd></dl>
+<div class="textblock"><p>ConditionalStatements represents all combinations of 'if', 'else' and 'else if' syntax and semantics. A single <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a> only ever represents up to two branches; an 'if' (true) and an optional 'else' (false). ConditionalStatements are nested within the second 'else' branch to support 'else if' logic. As well as both 'if' and 'else' branches, a <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a> also holds an <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Expression.html" title="Expressions are comprised of full or potentially partial parts of a full statement that may not neces...">Expression</a> related to its primary condition. </p>
+<dl class="section note"><dt>Note</dt><dd>The first 'if' branch is referred to as the 'true' branch. The second 'else' branch is referred to as the 'false' branch. </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="abf2fb63266a358aa04393a2bb62c9478"></a>
 <div class="memitem">
@@ -290,7 +291,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>An enumerated list of node types for all concrete node types. These can be used for faster evaluation of a given concrete node using the virtual function table via <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#ab703c8a88dcde2076cb089c07af0cc5c" title="Virtual method for accessing node type information. ">Node::nodetype()</a> rather than performing a dynamic_cast/calling <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#aa6af20b4807e0ff1021f08015a0c8779" title="Query whether or not this node is of a specific (derived) type. This method should be used to check i...">Node::isType</a>. </p>
-<dl class="section note"><dt>Note</dt><dd>Abstract (pure-virtual) nodes are not listed here. <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#aa6af20b4807e0ff1021f08015a0c8779" title="Query whether or not this node is of a specific (derived) type. This method should be used to check i...">Node::isType</a> should be used to determine if a node is of a given abstract type. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This is sometimes referred to as "manual RTTI". We use this technique combine with single dispatch due to opting for CRTP on the main visitor and no templated virtual method support in C++. i.e. no way to double dispatch: visit&lt;template T&gt;(Visitor&lt;T&gt;*) </dd>
+<dd>
+Abstract (pure-virtual) nodes are not listed here. <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#aa6af20b4807e0ff1021f08015a0c8779" title="Query whether or not this node is of a specific (derived) type. This method should be used to check i...">Node::isType</a> should be used to determine if a node is of a given abstract type. </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="acac9cbaeea226ed297804c012dc12b16a6e3c9853eac7f791316173112a4c920d"></a>TreeNode&#160;</td><td class="fielddoc">
 </td></tr>
@@ -298,9 +301,9 @@ Public Member Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="acac9cbaeea226ed297804c012dc12b16a43780fadfdb2235144acada7dbe105c7"></a>BlockNode&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="acac9cbaeea226ed297804c012dc12b16ae6485f7c0124c2ee5b208ef75237dfcc"></a>ExpressionListNode&#160;</td><td class="fielddoc">
-</td></tr>
 <tr><td class="fieldname"><a class="anchor" id="acac9cbaeea226ed297804c012dc12b16a4aab5c0f2459150efa56479af2eb819f"></a>ConditionalStatementNode&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="acac9cbaeea226ed297804c012dc12b16a9c67b92cc82860adc32a7bf2c3bdc31a"></a>CommaOperatorNode&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="acac9cbaeea226ed297804c012dc12b16a211255852991e0aa4bc65fc0efb5308d"></a>LoopNode&#160;</td><td class="fielddoc">
 </td></tr>
@@ -313,6 +316,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="acac9cbaeea226ed297804c012dc12b16a5eb95c2e659ce03204e6c0b0b0c87740"></a>UnaryOperatorNode&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="acac9cbaeea226ed297804c012dc12b16a1c1bb5e6682d57a60288fb496aeff4cf"></a>BinaryOperatorNode&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="acac9cbaeea226ed297804c012dc12b16a050af244605ad1322fc8e7b5a0179f1b"></a>TernaryOperatorNode&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="acac9cbaeea226ed297804c012dc12b16af9a5d82c6573803b099c3adfc4b9b20c"></a>CastNode&#160;</td><td class="fielddoc">
 </td></tr>
@@ -349,7 +354,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aef30e85976ed0eb6248616364834c793"></a>
+<a class="anchor" id="a7191b51382c2c9a1876ee2dfb313e091"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -366,13 +371,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html">Block</a> *&#160;</td>
-          <td class="paramname"><em>thenBranch</em>, </td>
+          <td class="paramname"><em>trueBlock</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html">Block</a> *&#160;</td>
-          <td class="paramname"><em>elseBranch</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramname"><em>falseBlock</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -387,12 +392,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Construct a new <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a> with an <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Expression.html" title="Expressions are comprised of full or potentially partial parts of a full statement that may not neces...">Expression</a> representing the primary condition, a <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html" title="A Block node represents a scoped list of statements. It may comprise of 0 or more statements...">Block</a> representing the 'then' branch and an optional <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html" title="A Block node represents a scoped list of statements. It may comprise of 0 or more statements...">Block</a> representing the 'else' branch. Ownership of all arguments is transferred to the <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a>. All arguments have their parent data updated. </p>
+<p>Construct a new <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a> with an <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Expression.html" title="Expressions are comprised of full or potentially partial parts of a full statement that may not neces...">Expression</a> representing the primary condition, a <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html" title="A Block node represents a scoped list of statements. It may comprise of 0 or more statements...">Block</a> representing the 'true' branch and an optional <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html" title="A Block node represents a scoped list of statements. It may comprise of 0 or more statements...">Block</a> representing the 'false' branch. Ownership of all arguments is transferred to the <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a>. All arguments have their parent data updated. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">conditional</td><td>The <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Expression.html" title="Expressions are comprised of full or potentially partial parts of a full statement that may not neces...">Expression</a> to construct the condition from </td></tr>
-    <tr><td class="paramname">thenBranch</td><td>The <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html" title="A Block node represents a scoped list of statements. It may comprise of 0 or more statements...">Block</a> to construct the then branch from </td></tr>
-    <tr><td class="paramname">elseBranch</td><td>The (optional) <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html" title="A Block node represents a scoped list of statements. It may comprise of 0 or more statements...">Block</a> to construct the else branch from </td></tr>
+    <tr><td class="paramname">trueBlock</td><td>The <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html" title="A Block node represents a scoped list of statements. It may comprise of 0 or more statements...">Block</a> to construct the true branch from </td></tr>
+    <tr><td class="paramname">falseBlock</td><td>The (optional) <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html" title="A Block node represents a scoped list of statements. It may comprise of 0 or more statements...">Block</a> to construct the false branch from </td></tr>
   </table>
   </dd>
 </dl>
@@ -504,7 +509,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Query the number of branches held by this <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a>. This is only ever 1 or 2. </p>
-<dl class="section return"><dt>Returns</dt><dd>2 if a valid 'then' and 'else' branch exist, 1 otherwise </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>2 if a valid 'true' and 'false' branch exist, 1 otherwise </dd></dl>
 
 </div>
 </div>
@@ -642,7 +647,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab96e6121612607ccf1f37ff556d3b4c8"></a>
+<a class="anchor" id="a84853235c5da2ec0a8cf040aeb47e78c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -650,7 +655,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html">Block</a>* elseBranch </td>
+          <td class="memname">const <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html">Block</a>* falseBranch </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -663,12 +668,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Access a const pointer to the ConditionalStatements 'else' branch as a <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html" title="A Block node represents a scoped list of statements. It may comprise of 0 or more statements...">Block</a>. </p>
-<dl class="section return"><dt>Returns</dt><dd>A const pointer to the 'else' branch </dd></dl>
+<p>Access a const pointer to the ConditionalStatements 'false' branch as a <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html" title="A Block node represents a scoped list of statements. It may comprise of 0 or more statements...">Block</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>A const pointer to the 'false' branch </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="abd16103c2ca5d655f80f8150cfa9f9f5"></a>
+<a class="anchor" id="ad86a4a3ae930b359b82b39e7397ddd5d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -676,7 +681,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool hasElseBranch </td>
+          <td class="memname">bool hasFalse </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -689,8 +694,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Query if this <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a> has a valid 'else' branch. </p>
-<dl class="section return"><dt>Returns</dt><dd>True if a valid else branch exists, false otherwise </dd></dl>
+<p>Query if this <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1ConditionalStatement.html" title="ConditionalStatements represents all combinations of &#39;if&#39;, &#39;else&#39; and &#39;else if&#39; syntax and semantics...">ConditionalStatement</a> has a valid 'false' branch. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if a valid 'false' branch exists, false otherwise </dd></dl>
 
 </div>
 </div>
@@ -940,7 +945,7 @@ This method will dynamic_cast the provided node to check to see if it's a compat
 
 </div>
 </div>
-<a class="anchor" id="ac0c600db7ed8ad2b722fb2f4da09c79a"></a>
+<a class="anchor" id="aa41d920cddb375afa731d24ec1708ec5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -948,7 +953,7 @@ This method will dynamic_cast the provided node to check to see if it's a compat
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html">Block</a>* thenBranch </td>
+          <td class="memname">const <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html">Block</a>* trueBranch </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -961,8 +966,8 @@ This method will dynamic_cast the provided node to check to see if it's a compat
 </table>
 </div><div class="memdoc">
 
-<p>Access a const pointer to the ConditionalStatements 'then' branch as a <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html" title="A Block node represents a scoped list of statements. It may comprise of 0 or more statements...">Block</a>. </p>
-<dl class="section return"><dt>Returns</dt><dd>A const pointer to the 'then' branch </dd></dl>
+<p>Access a const pointer to the ConditionalStatements 'true' branch as a <a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Block.html" title="A Block node represents a scoped list of statements. It may comprise of 0 or more statements...">Block</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>A const pointer to the 'true' branch </dd></dl>
 
 </div>
 </div>

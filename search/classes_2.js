@@ -6,6 +6,7 @@ var searchData=
   ['cfunctionsret',['CFunctionSRet',['../structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1CFunctionSRet.html',1,'openvdb::v7_0::ax::codegen']]],
   ['collectforeach',['CollectForEach',['../structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1internal_1_1CollectForEach.html',1,'openvdb::v7_0::ax::ast::internal']]],
   ['collectforeach_3c_20containertype_2c_20typelist_3c_20t_2c_20ts_2e_2e_2e_20_3e_20_3e',['CollectForEach&lt; ContainerType, TypeList&lt; T, Ts... &gt; &gt;',['../structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1internal_1_1CollectForEach_3_01ContainerType_00_01TypeList_3_01T_00_01Ts_8_8_8_01_4_01_4.html',1,'openvdb::v7_0::ax::ast::internal']]],
+  ['commaoperator',['CommaOperator',['../structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1CommaOperator.html',1,'openvdb::v7_0::ax::ast']]],
   ['compiler',['Compiler',['../classopenvdb_1_1v7__0_1_1ax_1_1Compiler.html',1,'openvdb::v7_0::ax']]],
   ['compileroptions',['CompilerOptions',['../structopenvdb_1_1v7__0_1_1ax_1_1CompilerOptions.html',1,'openvdb::v7_0::ax']]],
   ['compilerwrap',['CompilerWrap',['../classpyopenvdb_1_1ax_1_1CompilerWrap.html',1,'pyopenvdb::ax']]],

@@ -2,6 +2,7 @@ var searchData=
 [
   ['increment',['increment',['../structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Crement.html#a04390e6ff2b09a131b6d7ba1237ac89f',1,'openvdb::v7_0::ax::ast::Crement']]],
   ['inferred',['inferred',['../structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Attribute.html#a72c7fb9b51a6f42a28dd27aac7c9cae4',1,'openvdb::v7_0::ax::ast::Attribute']]],
+  ['init',['init',['../structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1DeclareLocal.html#a54cfc6002c96d6ef317ff22b9fad3194',1,'openvdb::v7_0::ax::ast::DeclareLocal']]],
   ['initial',['initial',['../structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Loop.html#a1045fd947da403078880a78301c1fb4e',1,'openvdb::v7_0::ax::ast::Loop']]],
   ['initialize',['initialize',['../namespaceopenvdb_1_1v7__0_1_1ax.html#a7812b9f26cf9da18a495f22f29ee0f4b',1,'openvdb::v7_0::ax']]],
   ['insert',['insert',['../classopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1FunctionRegistry.html#abaf1891724f1dc8b9769d863916ac114',1,'openvdb::v7_0::ax::codegen::FunctionRegistry::insert()'],['../structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1SymbolTable.html#a05cb4cffe9beccb3ec89d584235a9948',1,'openvdb::v7_0::ax::codegen::SymbolTable::insert()']]],
@@ -25,6 +26,5 @@ var searchData=
   ['istype',['isType',['../structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#aa6af20b4807e0ff1021f08015a0c8779',1,'openvdb::v7_0::ax::ast::Node']]],
   ['isvalidcast',['isValidCast',['../namespaceopenvdb_1_1v7__0_1_1ax_1_1codegen.html#a4631adb38fcb103a0202b5350e44d600',1,'openvdb::v7_0::ax::codegen']]],
   ['iswritable',['isWritable',['../classopenvdb_1_1v7__0_1_1ax_1_1AttributeRegistry.html#aa8a4a02fc0dc5ef3666a7fc34ddf1607',1,'openvdb::v7_0::ax::AttributeRegistry']]],
-  ['iter',['iter',['../structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1ArgumentIterator.html#a2e7e9a85f6c3926ba44bc0be856ec524',1,'openvdb::v7_0::ax::codegen::ArgumentIterator::iter()'],['../structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1ArgumentIterator_3_01SignatureT_00_010_01_4.html#adb18bfa1ac660ebf3fac5e9a90d91983',1,'openvdb::v7_0::ax::codegen::ArgumentIterator&lt; SignatureT, 0 &gt;::iter()']]],
   ['iteration',['iteration',['../structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Loop.html#a6f211d4596c6c02c1bdb324918f2fbbf',1,'openvdb::v7_0::ax::ast::Loop']]]
 ];

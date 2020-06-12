@@ -1,6 +1,6 @@
 <map id="Types.h" name="Types.h">
 <area shape="rect" id="node2" href="$Tokens_8h.html" title="Various function and operator tokens used throughout the AST and code generation. ..." alt="" coords="255,80,427,107"/>
-<area shape="rect" id="node11" href="$Literals_8h.html" title="openvdb_ax/ast/Literals.h" alt="" coords="589,80,760,107"/>
-<area shape="rect" id="node6" href="$Exceptions_8h.html" title="openvdb_ax/Exceptions.h" alt="" coords="255,155,427,181"/>
+<area shape="rect" id="node11" href="$Literals_8h.html" title="Basic string to numerical conversion for the parser. " alt="" coords="589,80,760,107"/>
+<area shape="rect" id="node6" href="$Exceptions_8h.html" title="OpenVDB AX Exceptions. " alt="" coords="255,155,427,181"/>
 <area shape="rect" id="node4" href="$version_8h.html" title="Library and file format version numbers. " alt="" coords="452,155,601,181"/>
 </map>

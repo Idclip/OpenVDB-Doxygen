@@ -111,10 +111,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2e7e9a85f6c3926ba44bc0be856ec524"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1ArgumentIterator.html#a2e7e9a85f6c3926ba44bc0be856ec524">iter</a> (std::vector&lt; llvm::Type * &gt; &amp;args, llvm::LLVMContext &amp;C)</td></tr>
-<tr class="separator:a2e7e9a85f6c3926ba44bc0be856ec524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a735e7cd21997ab27034b7ef97c507024"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1ArgumentIterator.html#a735e7cd21997ab27034b7ef97c507024">symbol</a> ()</td></tr>
-<tr class="separator:a735e7cd21997ab27034b7ef97c507024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560321f9cc37b4651cac660b3bb3b188"><td class="memTemplParams" colspan="2">template&lt;typename OpT &gt; </td></tr>
+<tr class="memitem:a560321f9cc37b4651cac660b3bb3b188"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1ArgumentIterator.html#a560321f9cc37b4651cac660b3bb3b188">apply</a> (const OpT &amp;op, const bool forwards)</td></tr>
+<tr class="separator:a560321f9cc37b4651cac660b3bb3b188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename SignatureT, size_t I = FunctionTraits&lt;SignatureT&gt;::N_ARGS&gt;<br />
@@ -147,7 +146,7 @@ struct openvdb::v7_0::ax::codegen::ArgumentIterator&lt; SignatureT, I &gt;</h3>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a2e7e9a85f6c3926ba44bc0be856ec524"></a>
+<a class="anchor" id="a560321f9cc37b4651cac660b3bb3b188"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -155,44 +154,21 @@ struct openvdb::v7_0::ax::codegen::ArgumentIterator&lt; SignatureT, I &gt;</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void iter </td>
+          <td class="memname">static void apply </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; llvm::Type * &gt; &amp;&#160;</td>
-          <td class="paramname"><em>args</em>, </td>
+          <td class="paramtype">const OpT &amp;&#160;</td>
+          <td class="paramname"><em>op</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">llvm::LLVMContext &amp;&#160;</td>
-          <td class="paramname"><em>C</em>&#160;</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>forwards</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a735e7cd21997ab27034b7ef97c507024"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static std::string symbol </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
         </tr>
       </table>
   </td>

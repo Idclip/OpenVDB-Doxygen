@@ -1,11 +1,11 @@
 <map id="PointExecutable.h" name="PointExecutable.h">
-<area shape="rect" id="node2" href="$CustomData_8h.html" title="Contains the CustomData class. " alt="" coords="90,81,235,122"/>
+<area shape="rect" id="node2" href="$CustomData_8h.html" title="Access to the CustomData class which can provide custom user user data to the OpenVDB AX Compiler..." alt="" coords="90,81,235,122"/>
 <area shape="rect" id="node14" href="$AttributeRegistry_8h.html" title="These classes contain lists of expected attributes and volumes which are populated by compiler during..." alt="" coords="666,81,811,122"/>
-<area shape="rect" id="node3" href="$Literals_8h.html" title="openvdb_ax/ast/Literals.h" alt="" coords="721,395,892,421"/>
+<area shape="rect" id="node3" href="$Literals_8h.html" title="Basic string to numerical conversion for the parser. " alt="" coords="721,395,892,421"/>
 <area shape="rect" id="node4" href="$version_8h.html" title="Library and file format version numbers. " alt="" coords="556,469,705,496"/>
 <area shape="rect" id="node15" href="$AST_8h.html" title="Provides the definition for every abstract and concrete derived class which represent a particular ab..." alt="" coords="492,320,647,347"/>
 <area shape="rect" id="node16" href="$Tokens_8h.html" title="Various function and operator tokens used throughout the AST and code generation. ..." alt="" coords="309,395,384,421"/>
-<area shape="rect" id="node23" href="$Scanners_8h.html" title="openvdb_ax/ast/Scanners.h" alt="" coords="648,171,832,197"/>
-<area shape="rect" id="node17" href="$Exceptions_8h.html" title="openvdb_ax/Exceptions.h" alt="" coords="163,469,335,496"/>
+<area shape="rect" id="node23" href="$Scanners_8h.html" title="Retrieve intrinsic information from AX AST by performing various traversal algorithms. " alt="" coords="648,171,832,197"/>
+<area shape="rect" id="node17" href="$Exceptions_8h.html" title="OpenVDB AX Exceptions. " alt="" coords="163,469,335,496"/>
 <area shape="rect" id="node24" href="$Visitor_8h.html" title="Contains the AX AST Node Visitor, providing default and customizable traversal and visitation methods..." alt="" coords="706,245,776,272"/>
 </map>

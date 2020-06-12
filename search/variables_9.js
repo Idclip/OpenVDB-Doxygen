@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['openvdb_5fax_5flibrary_5fmajor_5fversion',['OPENVDB_AX_LIBRARY_MAJOR_VERSION',['../namespaceopenvdb_1_1v7__0_1_1ax.html#af61408c1e1c77755597af42f96c0d8f7',1,'openvdb::v7_0::ax']]],
-  ['openvdb_5fax_5flibrary_5fminor_5fversion',['OPENVDB_AX_LIBRARY_MINOR_VERSION',['../namespaceopenvdb_1_1v7__0_1_1ax.html#a3c1d84efa737cf5c4e1a89357c318822',1,'openvdb::v7_0::ax']]],
-  ['openvdb_5fax_5flibrary_5fpatch_5fversion',['OPENVDB_AX_LIBRARY_PATCH_VERSION',['../namespaceopenvdb_1_1v7__0_1_1ax.html#ad044387d5c3a9ed0ae741d813fe2eb7d',1,'openvdb::v7_0::ax']]],
-  ['openvdb_5fax_5flibrary_5fversion',['OPENVDB_AX_LIBRARY_VERSION',['../namespaceopenvdb_1_1v7__0_1_1ax.html#a39adfc1c0d1a102ab188d0f3006ea859',1,'openvdb::v7_0::ax']]]
+  ['n_5fargs',['N_ARGS',['../structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1ComputeKernel.html#a716b4ece8a11a9813b6df7f9fe57425c',1,'openvdb::v7_0::ax::codegen::ComputeKernel::N_ARGS()'],['../structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1PointKernel.html#a716b4ece8a11a9813b6df7f9fe57425c',1,'openvdb::v7_0::ax::codegen::PointKernel::N_ARGS()'],['../structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1FunctionTraits_3_01ReturnT_07Args_8_8_8_08_4.html#a716b4ece8a11a9813b6df7f9fe57425c',1,'openvdb::v7_0::ax::codegen::FunctionTraits&lt; ReturnT(Args...)&gt;::N_ARGS()'],['../structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1VolumeKernel.html#a716b4ece8a11a9813b6df7f9fe57425c',1,'openvdb::v7_0::ax::codegen::VolumeKernel::N_ARGS()']]],
+  ['name',['Name',['../structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1ComputeKernel.html#ac58e4a8ebf302177da233fa486f84580',1,'openvdb::v7_0::ax::codegen::ComputeKernel']]]
 ];

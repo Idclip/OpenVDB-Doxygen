@@ -129,7 +129,7 @@ Public Attributes</h2></td></tr>
 <p>Enable the constant folding of C bindings. Functions may use this setting to determine whether they are allowed to be called during code generation to evaluate call sites with purely constant arguments and replace the call with the result. </p>
 <dl class="section note"><dt>Note</dt><dd>This does not impact IR functions which we leave to LLVM's CF during IR optimization. </dd>
 <dd>
-We used to bind IR methods to corresponding C bindings, however it can be very easy to implement incorrectly, leading to discrepancies in the CF results. Fundamentally, LLVM's support for CF IR is far superior and our framework only supports some types of folding (see <a class="el" href="ConstantFolding_8h.html">codegen/ConstantFolding.h</a>) </dd></dl>
+We used to bind IR methods to corresponding C bindings, however it can be very easy to implement incorrectly, leading to discrepancies in the CF results. Fundamentally, LLVM's support for CF IR is far superior and our framework only supports some types of folding (see <a class="el" href="ConstantFolding_8h.html" title="Constant folding for C++ bindings. ">codegen/ConstantFolding.h</a>) </dd></dl>
 
 </div>
 </div>

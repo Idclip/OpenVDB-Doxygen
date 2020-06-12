@@ -4,19 +4,19 @@
 <area shape="rect" id="node16" href="$Types_8h.html" title="Consolidated llvm types for most supported types. " alt="" coords="727,80,796,107"/>
 <area shape="rect" id="node21" href="$Utils_8h.html" title="Utility code generation methods for performing various llvm operations. " alt="" coords="914,155,973,181"/>
 <area shape="rect" id="node4" href="$AttributeRegistry_8h.html" title="These classes contain lists of expected attributes and volumes which are populated by compiler during..." alt="" coords="231,304,361,331"/>
-<area shape="rect" id="node15" href="$util_8h.html" title="util.h" alt="" coords="535,155,585,181"/>
-<area shape="rect" id="node3" href="$Scanners_8h.html" title="Scanners.h" alt="" coords="299,229,387,256"/>
+<area shape="rect" id="node15" href="$util_8h.html" title="Test utilities. " alt="" coords="535,155,585,181"/>
+<area shape="rect" id="node3" href="$Scanners_8h.html" title="Retrieve intrinsic information from AX AST by performing various traversal algorithms. " alt="" coords="299,229,387,256"/>
 <area shape="rect" id="node13" href="$ComputeGenerator_8h.html" title="The core visitor framework for code generation. " alt="" coords="537,379,679,405"/>
-<area shape="rect" id="node14" href="$Compiler_8h.html" title="Compiler.h" alt="" coords="5,229,91,256"/>
+<area shape="rect" id="node14" href="$Compiler_8h.html" title="The OpenVDB AX Compiler class provides methods to generate AX executables from a provided AX AST (or ..." alt="" coords="5,229,91,256"/>
 <area shape="rect" id="node5" href="$PointComputeGenerator_8h.html" title="The visitor framework and function definition for point data grid code generation. " alt="" coords="631,453,804,480"/>
 <area shape="rect" id="node6" href="$VolumeComputeGenerator_8h.html" title="The visitor framework and function definition for volume grid code generation. " alt="" coords="405,453,592,480"/>
-<area shape="rect" id="node7" href="$PointExecutable_8h.html" title="Contains PointExecutable class. " alt="" coords="232,379,360,405"/>
-<area shape="rect" id="node10" href="$VolumeExecutable_8h.html" title="Contains VolumeExecutable class. " alt="" coords="65,379,207,405"/>
+<area shape="rect" id="node7" href="$PointExecutable_8h.html" title="The PointExecutable, produced by the OpenVDB AX Compiler for execution over OpenVDB Points Grids..." alt="" coords="232,379,360,405"/>
+<area shape="rect" id="node10" href="$VolumeExecutable_8h.html" title="The VolumeExecutable, produced by the OpenVDB AX Compiler for execution over Numerical OpenVDB Grids..." alt="" coords="65,379,207,405"/>
 <area shape="rect" id="node8" href="$pyPointExecutable_8h.html" title="Python wrapper for PointExecutable. " alt="" coords="238,453,380,480"/>
 <area shape="rect" id="node9" href="$pyCompiler_8h.html" title="Python wrapper for compiler class. " alt="" coords="87,528,185,555"/>
 <area shape="rect" id="node11" href="$pyVolumeExecutable_8h.html" title="Python wrapper for VolumeExecutable. " alt="" coords="58,453,213,480"/>
 <area shape="rect" id="node17" href="$FunctionTypes_8h.html" title="Contains frameworks for creating custom AX functions which can be registered within the FunctionRegis..." alt="" coords="615,229,733,256"/>
 <area shape="rect" id="node18" href="$FunctionRegistry_8h.html" title="Contains the global function registration definition which described all available user front end fun..." alt="" coords="713,304,844,331"/>
-<area shape="rect" id="node20" href="$ConstantFolding_8h.html" title="ConstantFolding.h" alt="" coords="660,155,788,181"/>
+<area shape="rect" id="node20" href="$ConstantFolding_8h.html" title="Constant folding for C++ bindings. " alt="" coords="660,155,788,181"/>
 <area shape="rect" id="node19" href="$Functions_8h.html" title="Contains the function objects that define the functions used in compute function generation, to be inserted into the FunctionRegistry. These define general purpose functions such as math functions. " alt="" coords="755,379,845,405"/>
 </map>

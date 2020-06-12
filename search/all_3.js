@@ -2,7 +2,7 @@ var searchData=
 [
   ['data',['data',['../classopenvdb_1_1v7__0_1_1ax_1_1AttributeRegistry.html#af3256fe60eb36f0e7a7621e9167bb077',1,'openvdb::v7_0::ax::AttributeRegistry']]],
   ['declare_5flocal',['declare_local',['../unionAXSTYPE.html#a435f4476d59d69e9ed673a54f9812f57',1,'AXSTYPE']]],
-  ['declarelocal',['DeclareLocal',['../structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1DeclareLocal.html#ab04f9592bb300c2cb3308e2ca1ce4e80',1,'openvdb::v7_0::ax::ast::DeclareLocal::DeclareLocal(const std::string &amp;name, const tokens::CoreType type)'],['../structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1DeclareLocal.html#a3c86ab13b79ef89aa633f3694c697b38',1,'openvdb::v7_0::ax::ast::DeclareLocal::DeclareLocal(const DeclareLocal &amp;other)']]],
+  ['declarelocal',['DeclareLocal',['../structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1DeclareLocal.html#a7d17417106f39dcaca461564c191d963',1,'openvdb::v7_0::ax::ast::DeclareLocal::DeclareLocal(const tokens::CoreType type, Local *local, Expression *init=nullptr)'],['../structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1DeclareLocal.html#a3c86ab13b79ef89aa633f3694c697b38',1,'openvdb::v7_0::ax::ast::DeclareLocal::DeclareLocal(const DeclareLocal &amp;other)']]],
   ['declarelocal',['DeclareLocal',['../structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1DeclareLocal.html',1,'openvdb::v7_0::ax::ast']]],
   ['declarelocalnode',['DeclareLocalNode',['../structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Node.html#acac9cbaeea226ed297804c012dc12b16ac8a7cf9d5914e72e1b0d1d6b1209ab24',1,'openvdb::v7_0::ax::ast::Node']]],
   ['declpreferrence',['DeclPreferrence',['../structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1FunctionBuilder.html#a43555222e4a7c9c9dd4b21db778c9300',1,'openvdb::v7_0::ax::codegen::FunctionBuilder']]],

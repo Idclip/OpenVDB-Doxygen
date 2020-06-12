@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Visitor.html" title="Visitor\&lt; VisitNodeType\l\&lt; NodeT, OpT \&gt; \&gt;" alt="" coords="5,5,163,46"/>
-<area shape="rect" id="node2" href="$structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1VisitNodeType.html" title="VisitNodeType\&lt; NodeT,\l OpT \&gt;" alt="" coords="211,5,373,46"/>
+<area shape="rect" id="node1" href="$structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1Visitor.html" title="Visitor\&lt; std::conditional\l\&lt; std::is_same\&lt; Derived,\l void \&gt;::value, VisitNodeType\l\&lt; NodeT, OpT \&gt;, Derived \&gt;::type \&gt;" alt="" coords="6,5,234,75"/>
+<area shape="rect" id="node2" href="$structopenvdb_1_1v7__0_1_1ax_1_1ast_1_1VisitNodeType.html" title="VisitNodeType\&lt; NodeT,\l OpT, Derived \&gt;" alt="" coords="283,19,445,61"/>
 </map>

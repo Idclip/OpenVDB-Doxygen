@@ -1,12 +1,12 @@
 <map id="Functions.h" name="Functions.h">
-<area shape="rect" id="node2" href="$CompilerOptions_8h.html" title="openvdb_ax/compiler\l/CompilerOptions.h" alt="" coords="927,171,1072,213"/>
+<area shape="rect" id="node2" href="$CompilerOptions_8h.html" title="OpenVDB AX Compiler Options. " alt="" coords="927,171,1072,213"/>
 <area shape="rect" id="node4" href="$FunctionRegistry_8h.html" title="Contains the global function registration definition which described all available user front end fun..." alt="" coords="1207,81,1352,122"/>
 <area shape="rect" id="node5" href="$FunctionTypes_8h.html" title="Contains frameworks for creating custom AX functions which can be registered within the FunctionRegis..." alt="" coords="1097,179,1215,205"/>
 <area shape="rect" id="node6" href="$Types_8h.html" title="Consolidated llvm types for most supported types. " alt="" coords="902,353,1047,394"/>
 <area shape="rect" id="node9" href="$version_8h.html" title="Library and file format version numbers. " alt="" coords="1067,517,1216,544"/>
 <area shape="rect" id="node27" href="$Utils_8h.html" title="Utility code generation methods for performing various llvm operations. " alt="" coords="713,262,857,303"/>
-<area shape="rect" id="node29" href="$ConstantFolding_8h.html" title="openvdb_ax/codegen\l/ConstantFolding.h" alt="" coords="354,262,499,303"/>
+<area shape="rect" id="node29" href="$ConstantFolding_8h.html" title="Constant folding for C++ bindings. " alt="" coords="354,262,499,303"/>
 <area shape="rect" id="node7" href="$Tokens_8h.html" title="Various function and operator tokens used throughout the AST and code generation. ..." alt="" coords="765,443,936,469"/>
-<area shape="rect" id="node16" href="$Literals_8h.html" title="openvdb_ax/ast/Literals.h" alt="" coords="1012,443,1183,469"/>
-<area shape="rect" id="node11" href="$Exceptions_8h.html" title="openvdb_ax/Exceptions.h" alt="" coords="570,517,741,544"/>
+<area shape="rect" id="node16" href="$Literals_8h.html" title="Basic string to numerical conversion for the parser. " alt="" coords="1012,443,1183,469"/>
+<area shape="rect" id="node11" href="$Exceptions_8h.html" title="OpenVDB AX Exceptions. " alt="" coords="570,517,741,544"/>
 </map>
