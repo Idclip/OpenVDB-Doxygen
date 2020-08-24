@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">OpenVDB AX
-   &#160;<span id="projectnumber">0.2.0</span>
+   &#160;<span id="projectnumber">0.3.0</span>
    </div>
   </td>
  </tr>
@@ -91,6 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">PointExecutable Class Reference</div>  </div>
@@ -109,14 +110,40 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a35b8dc2cc6487bc0d91f3628d0a37e37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html#a35b8dc2cc6487bc0d91f3628d0a37e37">PointExecutable</a> (const std::shared_ptr&lt; const llvm::ExecutionEngine &gt; &amp;exeEngine, const std::shared_ptr&lt; const llvm::LLVMContext &gt; &amp;context, const <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1AttributeRegistry.html#af63be2e0846104fe046387102b5f0b00">AttributeRegistry::ConstPtr</a> &amp;attributeRegistry, const <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1CustomData.html#a4c48d1b9333a996951c1241d5986b7da">CustomData::ConstPtr</a> &amp;customData, const std::unordered_map&lt; std::string, uint64_t &gt; &amp;functions)</td></tr>
-<tr class="memdesc:a35b8dc2cc6487bc0d91f3628d0a37e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a35b8dc2cc6487bc0d91f3628d0a37e37">More...</a><br /></td></tr>
-<tr class="separator:a35b8dc2cc6487bc0d91f3628d0a37e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9b75ba67946b95a5634bb9e5d05de0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html#af9b75ba67946b95a5634bb9e5d05de0c">~PointExecutable</a> ()=default</td></tr>
-<tr class="separator:af9b75ba67946b95a5634bb9e5d05de0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a3965b3290988508697499780060c04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html#a0a3965b3290988508697499780060c04">execute</a> (points::PointDataGrid &amp;grid, const std::string *const group=nullptr, const bool createMissing=true) const </td></tr>
-<tr class="memdesc:a0a3965b3290988508697499780060c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">executes compiled AX code on target grid  <a href="#a0a3965b3290988508697499780060c04">More...</a><br /></td></tr>
-<tr class="separator:a0a3965b3290988508697499780060c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b4c609cc4c48227d90f26e6ade5825"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html#ac9b4c609cc4c48227d90f26e6ade5825">~PointExecutable</a> ()</td></tr>
+<tr class="separator:ac9b4c609cc4c48227d90f26e6ade5825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a587fd7c52d5d2ca8cc9dc20e7a55dfac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html#a587fd7c52d5d2ca8cc9dc20e7a55dfac">PointExecutable</a> (const <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html">PointExecutable</a> &amp;other)</td></tr>
+<tr class="memdesc:a587fd7c52d5d2ca8cc9dc20e7a55dfac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor. Shares the LLVM constructs but deep copies the settings. Multiple copies of an executor can be used at the same time safely.  <a href="#a587fd7c52d5d2ca8cc9dc20e7a55dfac">More...</a><br /></td></tr>
+<tr class="separator:a587fd7c52d5d2ca8cc9dc20e7a55dfac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae39043638c25771216b8f6454f24a912"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html#ae39043638c25771216b8f6454f24a912">execute</a> (points::PointDataGrid &amp;grid) const </td></tr>
+<tr class="memdesc:ae39043638c25771216b8f6454f24a912"><td class="mdescLeft">&#160;</td><td class="mdescRight">executes compiled AX code on target grid  <a href="#ae39043638c25771216b8f6454f24a912">More...</a><br /></td></tr>
+<tr class="separator:ae39043638c25771216b8f6454f24a912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f21b749192fec6c1b31ff8987eb7d8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html#a7f21b749192fec6c1b31ff8987eb7d8f">setGroupExecution</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:a7f21b749192fec6c1b31ff8987eb7d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a specific point group to execute over. The default is none, which corresponds to all points. Note that this can also be compiled into the AX function using the ingroup("mygroup") method.  <a href="#a7f21b749192fec6c1b31ff8987eb7d8f">More...</a><br /></td></tr>
+<tr class="separator:a7f21b749192fec6c1b31ff8987eb7d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43cf81ff2e425e3af9f11949300cbaf0"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html#a43cf81ff2e425e3af9f11949300cbaf0">getGroupExecution</a> () const </td></tr>
+<tr class="separator:a43cf81ff2e425e3af9f11949300cbaf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ca28d3bd69799bef5435081d8ca285c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html#a1ca28d3bd69799bef5435081d8ca285c">setCreateMissing</a> (const bool flag)</td></tr>
+<tr class="memdesc:a1ca28d3bd69799bef5435081d8ca285c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the behaviour when missing point attributes are accessed. Default behaviour is true, which creates them with default initial values. If false, a missing attribute runtime error will be thrown on missing accesses.  <a href="#a1ca28d3bd69799bef5435081d8ca285c">More...</a><br /></td></tr>
+<tr class="separator:a1ca28d3bd69799bef5435081d8ca285c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff7ff8f5fe5c4cac499044795bd075ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html#aff7ff8f5fe5c4cac499044795bd075ec">getCreateMissing</a> () const </td></tr>
+<tr class="separator:aff7ff8f5fe5c4cac499044795bd075ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e503f6b9ee93a04fae7544305ad161"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html#a65e503f6b9ee93a04fae7544305ad161">setGrainSize</a> (const size_t grain)</td></tr>
+<tr class="memdesc:a65e503f6b9ee93a04fae7544305ad161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the threading grain size. Default is 1. A value of 0 has the effect of disabling multi-threading.  <a href="#a65e503f6b9ee93a04fae7544305ad161">More...</a><br /></td></tr>
+<tr class="separator:a65e503f6b9ee93a04fae7544305ad161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60b0a96a503d6360bcdac038a60d5754"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html#a60b0a96a503d6360bcdac038a60d5754">getGrainSize</a> () const </td></tr>
+<tr class="separator:a60b0a96a503d6360bcdac038a60d5754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca34b05698e675cdbbb332e4f07ab260"><td class="memItemLeft" align="right" valign="top">OPENVDB_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html#aca34b05698e675cdbbb332e4f07ab260">execute</a> (points::PointDataGrid &amp;grid, const std::string *const group, const bool create) const </td></tr>
+<tr class="separator:aca34b05698e675cdbbb332e4f07ab260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3942d1518e5d48b9748d686bea5993a"><td class="memItemLeft" align="right" valign="top">OPENVDB_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html#ad3942d1518e5d48b9748d686bea5993a">execute</a> (points::PointDataGrid &amp;grid, const std::string *const group) const </td></tr>
+<tr class="separator:ad3942d1518e5d48b9748d686bea5993a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a5f904e96618a83d59208fb22cdf11ff5"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html#a5f904e96618a83d59208fb22cdf11ff5">Compiler</a></td></tr>
+<tr class="separator:a5f904e96618a83d59208fb22cdf11ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfeb0ea9d4bda2e4c2a4395916b156c3"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html#adfeb0ea9d4bda2e4c2a4395916b156c3">::TestPointExecutable</a></td></tr>
+<tr class="separator:adfeb0ea9d4bda2e4c2a4395916b156c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Object that encapsulates compiled AX code which can be executed on a target point grid. </p>
@@ -134,7 +161,59 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a35b8dc2cc6487bc0d91f3628d0a37e37"></a>
+<a class="anchor" id="ac9b4c609cc4c48227d90f26e6ade5825"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html">PointExecutable</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a587fd7c52d5d2ca8cc9dc20e7a55dfac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html">PointExecutable</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html">PointExecutable</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy constructor. Shares the LLVM constructs but deep copies the settings. Multiple copies of an executor can be used at the same time safely. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae39043638c25771216b8f6454f24a912"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void execute </td>
+          <td>(</td>
+          <td class="paramtype">points::PointDataGrid &amp;&#160;</td>
+          <td class="paramname"><em>grid</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>executes compiled AX code on target grid </p>
+
+</div>
+</div>
+<a class="anchor" id="aca34b05698e675cdbbb332e4f07ab260"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -142,39 +221,27 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html">PointExecutable</a> </td>
+          <td class="memname">OPENVDB_DEPRECATED void execute </td>
           <td>(</td>
-          <td class="paramtype">const std::shared_ptr&lt; const llvm::ExecutionEngine &gt; &amp;&#160;</td>
-          <td class="paramname"><em>exeEngine</em>, </td>
+          <td class="paramtype">points::PointDataGrid &amp;&#160;</td>
+          <td class="paramname"><em>grid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::shared_ptr&lt; const llvm::LLVMContext &gt; &amp;&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
+          <td class="paramtype">const std::string *const&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1AttributeRegistry.html#af63be2e0846104fe046387102b5f0b00">AttributeRegistry::ConstPtr</a> &amp;&#160;</td>
-          <td class="paramname"><em>attributeRegistry</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1CustomData.html#a4c48d1b9333a996951c1241d5986b7da">CustomData::ConstPtr</a> &amp;&#160;</td>
-          <td class="paramname"><em>customData</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::unordered_map&lt; std::string, uint64_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>functions</em>&#160;</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>create</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -184,22 +251,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constructor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">exeEngine</td><td>Shared pointer to an llvm::ExecutionEngine object used to build functions. context should be the associated llvm context </td></tr>
-    <tr><td class="paramname">context</td><td>Shared pointer to an llvm:context object associated with exeEngine </td></tr>
-    <tr><td class="paramname">attributeRegistry</td><td>Registry of point attributes accessed by AX code </td></tr>
-    <tr><td class="paramname">customData</td><td>Custom data object which will be shared by this executable. It can be used to retrieve external data from within the AX code </td></tr>
-    <tr><td class="paramname">functions</td><td>A map of function names to physical memory addresses which were built by llvm using exeEngine </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>This object is normally be constructed by the <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1Compiler.html#a692af278108ac9f73eb47dce05d9250c" title="Compile/build a given AST into an executable object of the given type. ">Compiler::compile</a> method, rather than directly </dd></dl>
-
 </div>
 </div>
-<a class="anchor" id="af9b75ba67946b95a5634bb9e5d05de0c"></a>
+<a class="anchor" id="ad3942d1518e5d48b9748d686bea5993a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -207,28 +261,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">~<a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1PointExecutable.html">PointExecutable</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a0a3965b3290988508697499780060c04"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void execute </td>
+          <td class="memname">OPENVDB_DEPRECATED void execute </td>
           <td>(</td>
           <td class="paramtype">points::PointDataGrid &amp;&#160;</td>
           <td class="paramname"><em>grid</em>, </td>
@@ -237,13 +270,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::string *const&#160;</td>
-          <td class="paramname"><em>group</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>createMissing</em> = <code>true</code>&#160;</td>
+          <td class="paramname"><em>group</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -251,17 +278,174 @@ Public Member Functions</h2></td></tr>
           <td></td><td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>executes compiled AX code on target grid </p>
+</div>
+</div>
+<a class="anchor" id="aff7ff8f5fe5c4cac499044795bd075ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool getCreateMissing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Whether this executable will generate new point attributes. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a60b0a96a503d6360bcdac038a60d5754"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t getGrainSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The current grain size </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a43cf81ff2e425e3af9f11949300cbaf0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string&amp; getGroupExecution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The points group to be processed. Default is empty, which is all points. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1ca28d3bd69799bef5435081d8ca285c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setCreateMissing </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the behaviour when missing point attributes are accessed. Default behaviour is true, which creates them with default initial values. If false, a missing attribute runtime error will be thrown on missing accesses. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">grid</td><td>Grid to apply code to </td></tr>
-    <tr><td class="paramname">group</td><td>Optional name of a group for filtering. If this is not NULL, the code will only be applied to points in this group </td></tr>
-    <tr><td class="paramname">createMissing</td><td>If true, any attribute which has been used but does not exist will be created. Otherwise, a missing attribute runtime error will be thrown. </td></tr>
+    <tr><td class="paramname">flag</td><td>Enables or disables the creation of missing attributes </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a65e503f6b9ee93a04fae7544305ad161"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setGrainSize </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>grain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the threading grain size. Default is 1. A value of 0 has the effect of disabling multi-threading. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grain</td><td>The grain size </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7f21b749192fec6c1b31ff8987eb7d8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setGroupExecution </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a specific point group to execute over. The default is none, which corresponds to all points. Note that this can also be compiled into the AX function using the ingroup("mygroup") method. </p>
+<dl class="section warning"><dt>Warning</dt><dd>If the group does not exist during execute, a runtime error will be thrown. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the group to execute over </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="adfeb0ea9d4bda2e4c2a4395916b156c3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class ::TestPointExecutable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f904e96618a83d59208fb22cdf11ff5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1Compiler.html">Compiler</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

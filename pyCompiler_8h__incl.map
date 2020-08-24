@@ -1,17 +1,17 @@
 <map id="pyCompiler.h" name="pyCompiler.h">
-<area shape="rect" id="node2" href="$pyPointExecutable_8h.html" title="Python wrapper for PointExecutable. " alt="" coords="706,80,848,107"/>
-<area shape="rect" id="node30" href="$pyVolumeExecutable_8h.html" title="Python wrapper for VolumeExecutable. " alt="" coords="474,80,629,107"/>
-<area shape="rect" id="node33" href="$Compiler_8h.html" title="The OpenVDB AX Compiler class provides methods to generate AX executables from a provided AX AST (or ..." alt="" coords="1102,155,1246,197"/>
-<area shape="rect" id="node3" href="$PointExecutable_8h.html" title="The PointExecutable, produced by the OpenVDB AX Compiler for execution over OpenVDB Points Grids..." alt="" coords="730,155,874,197"/>
-<area shape="rect" id="node4" href="$CustomData_8h.html" title="Access to the CustomData class which can provide custom user user data to the OpenVDB AX Compiler..." alt="" coords="826,246,970,287"/>
-<area shape="rect" id="node16" href="$AttributeRegistry_8h.html" title="These classes contain lists of expected attributes and volumes which are populated by compiler during..." alt="" coords="358,246,502,287"/>
-<area shape="rect" id="node5" href="$Literals_8h.html" title="Basic string to numerical conversion for the parser. " alt="" coords="262,560,433,587"/>
-<area shape="rect" id="node6" href="$version_8h.html" title="Library and file format version numbers. " alt="" coords="150,635,300,661"/>
-<area shape="rect" id="node17" href="$AST_8h.html" title="Provides the definition for every abstract and concrete derived class which represent a particular ab..." alt="" coords="406,485,561,512"/>
-<area shape="rect" id="node18" href="$Tokens_8h.html" title="Various function and operator tokens used throughout the AST and code generation. ..." alt="" coords="618,560,693,587"/>
-<area shape="rect" id="node25" href="$Scanners_8h.html" title="Retrieve intrinsic information from AX AST by performing various traversal algorithms. " alt="" coords="226,336,410,363"/>
-<area shape="rect" id="node19" href="$Exceptions_8h.html" title="OpenVDB AX Exceptions. " alt="" coords="542,635,713,661"/>
-<area shape="rect" id="node26" href="$Visitor_8h.html" title="Contains the AX AST Node Visitor, providing default and customizable traversal and visitation methods..." alt="" coords="283,411,353,437"/>
-<area shape="rect" id="node31" href="$VolumeExecutable_8h.html" title="The VolumeExecutable, produced by the OpenVDB AX Compiler for execution over Numerical OpenVDB Grids..." alt="" coords="412,155,558,197"/>
-<area shape="rect" id="node34" href="$CompilerOptions_8h.html" title="OpenVDB AX Compiler Options. " alt="" coords="1047,246,1192,287"/>
+<area shape="rect" id="node2" href="$pyPointExecutable_8h.html" title="Python wrapper for PointExecutable. " alt="" coords="525,80,667,107"/>
+<area shape="rect" id="node30" href="$pyVolumeExecutable_8h.html" title="Python wrapper for VolumeExecutable. " alt="" coords="743,80,899,107"/>
+<area shape="rect" id="node33" href="$Compiler_8h.html" title="The OpenVDB AX Compiler class provides methods to generate AX executables from a provided AX AST (or ..." alt="" coords="1026,155,1171,197"/>
+<area shape="rect" id="node3" href="$PointExecutable_8h.html" title="The PointExecutable, produced by the OpenVDB AX Compiler for execution over OpenVDB Points Grids..." alt="" coords="453,155,597,197"/>
+<area shape="rect" id="node4" href="$CustomData_8h.html" title="Access to the CustomData class which can provide custom user user data to the OpenVDB AX Compiler..." alt="" coords="670,246,815,287"/>
+<area shape="rect" id="node16" href="$AttributeRegistry_8h.html" title="These classes contain lists of expected attributes and volumes which are populated by compiler during..." alt="" coords="398,246,543,287"/>
+<area shape="rect" id="node5" href="$Literals_8h.html" title="Basic string to numerical conversion for the parser. " alt="" coords="861,560,1032,587"/>
+<area shape="rect" id="node6" href="$version_8h.html" title="Library and file format version numbers. " alt="" coords="608,635,757,661"/>
+<area shape="rect" id="node17" href="$AST_8h.html" title="Provides the definition for every abstract and concrete derived class which represent a particular ab..." alt="" coords="752,485,907,512"/>
+<area shape="rect" id="node18" href="$Tokens_8h.html" title="Various function and operator tokens used throughout the AST and code generation. ..." alt="" coords="398,560,473,587"/>
+<area shape="rect" id="node25" href="$Scanners_8h.html" title="Retrieve intrinsic information from AX AST by performing various traversal algorithms. " alt="" coords="317,336,501,363"/>
+<area shape="rect" id="node19" href="$Exceptions_8h.html" title="OpenVDB AX Exceptions. " alt="" coords="110,635,281,661"/>
+<area shape="rect" id="node26" href="$Visitor_8h.html" title="Contains the AX AST Node Visitor, providing default and customizable traversal and visitation methods..." alt="" coords="534,411,604,437"/>
+<area shape="rect" id="node31" href="$VolumeExecutable_8h.html" title="The VolumeExecutable, produced by the OpenVDB AX Compiler for execution over Numerical OpenVDB Grids..." alt="" coords="769,155,916,197"/>
+<area shape="rect" id="node34" href="$CompilerOptions_8h.html" title="OpenVDB AX Compiler Options. " alt="" coords="1026,246,1171,287"/>
 </map>

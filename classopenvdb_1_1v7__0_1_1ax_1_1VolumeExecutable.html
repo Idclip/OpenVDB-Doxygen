@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">OpenVDB AX
-   &#160;<span id="projectnumber">0.2.0</span>
+   &#160;<span id="projectnumber">0.3.0</span>
    </div>
   </td>
  </tr>
@@ -91,6 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">VolumeExecutable Class Reference</div>  </div>
@@ -114,14 +115,47 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a313ec3230fcaac23cc33493865737ca9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#a313ec3230fcaac23cc33493865737ca9">VolumeExecutable</a> (const std::shared_ptr&lt; const llvm::ExecutionEngine &gt; &amp;exeEngine, const std::shared_ptr&lt; const llvm::LLVMContext &gt; &amp;context, const <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1AttributeRegistry.html#af63be2e0846104fe046387102b5f0b00">AttributeRegistry::ConstPtr</a> &amp;accessRegistry, const <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1CustomData.html#a4c48d1b9333a996951c1241d5986b7da">CustomData::ConstPtr</a> &amp;customData, const std::unordered_map&lt; std::string, uint64_t &gt; &amp;functionAddresses)</td></tr>
-<tr class="memdesc:a313ec3230fcaac23cc33493865737ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a313ec3230fcaac23cc33493865737ca9">More...</a><br /></td></tr>
-<tr class="separator:a313ec3230fcaac23cc33493865737ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a590ae3a01773611d83aac1cad5738cd9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#a590ae3a01773611d83aac1cad5738cd9">~VolumeExecutable</a> ()=default</td></tr>
-<tr class="separator:a590ae3a01773611d83aac1cad5738cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1c9ddde899c40fe261068e45090a822"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#ae1c9ddde899c40fe261068e45090a822">execute</a> (openvdb::GridPtrVec &amp;grids, const <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#af607f22e4873b3369e942d9ebb3e72b1">IterType</a> iterType=<a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#af607f22e4873b3369e942d9ebb3e72b1a90651ebea9a35ec4e018c8157492e17c">IterType::ON</a>, const bool createMissing=false) const </td></tr>
-<tr class="memdesc:ae1c9ddde899c40fe261068e45090a822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute AX code on target grids.  <a href="#ae1c9ddde899c40fe261068e45090a822">More...</a><br /></td></tr>
-<tr class="separator:ae1c9ddde899c40fe261068e45090a822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad814a17f6ae499ae481cd4593c5f4533"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#ad814a17f6ae499ae481cd4593c5f4533">~VolumeExecutable</a> ()</td></tr>
+<tr class="separator:ad814a17f6ae499ae481cd4593c5f4533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afecf152485d4534c5386e7244d15930b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#afecf152485d4534c5386e7244d15930b">VolumeExecutable</a> (const <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html">VolumeExecutable</a> &amp;other)</td></tr>
+<tr class="memdesc:afecf152485d4534c5386e7244d15930b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor. Shares the LLVM constructs but deep copies the settings. Multiple copies of an executor can be used at the same time safely.  <a href="#afecf152485d4534c5386e7244d15930b">More...</a><br /></td></tr>
+<tr class="separator:afecf152485d4534c5386e7244d15930b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a05061e87e8826cb21add59aa5611f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#a1a05061e87e8826cb21add59aa5611f5">execute</a> (openvdb::GridPtrVec &amp;grids) const </td></tr>
+<tr class="memdesc:a1a05061e87e8826cb21add59aa5611f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute AX code on target grids.  <a href="#a1a05061e87e8826cb21add59aa5611f5">More...</a><br /></td></tr>
+<tr class="separator:a1a05061e87e8826cb21add59aa5611f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89ee78ccd4c14e3a9b1751c001fb055e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#a89ee78ccd4c14e3a9b1751c001fb055e">execute</a> (openvdb::GridBase &amp;grid) const </td></tr>
+<tr class="separator:a89ee78ccd4c14e3a9b1751c001fb055e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ca28d3bd69799bef5435081d8ca285c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#a1ca28d3bd69799bef5435081d8ca285c">setCreateMissing</a> (const bool flag)</td></tr>
+<tr class="memdesc:a1ca28d3bd69799bef5435081d8ca285c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the behaviour when missing grids are accessed. Default behaviour is true, which creates them with default transforms and background values.  <a href="#a1ca28d3bd69799bef5435081d8ca285c">More...</a><br /></td></tr>
+<tr class="separator:a1ca28d3bd69799bef5435081d8ca285c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff7ff8f5fe5c4cac499044795bd075ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#aff7ff8f5fe5c4cac499044795bd075ec">getCreateMissing</a> () const </td></tr>
+<tr class="separator:aff7ff8f5fe5c4cac499044795bd075ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeba4e1c6cedbfda3fb609f8a9817ffe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#aeeba4e1c6cedbfda3fb609f8a9817ffe">setTreeExecutionLevel</a> (const Index level)</td></tr>
+<tr class="memdesc:aeeba4e1c6cedbfda3fb609f8a9817ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the execution level for this executable. This controls what nodes are processed when execute is called. Possible values depend on the OpenVDB configuration in use however a value of 0 is the default and will always correspond to the lowest level (leaf-level).  <a href="#aeeba4e1c6cedbfda3fb609f8a9817ffe">More...</a><br /></td></tr>
+<tr class="separator:aeeba4e1c6cedbfda3fb609f8a9817ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f82f68e810ff3193b9faba2dcce508"><td class="memItemLeft" align="right" valign="top">Index&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#ae8f82f68e810ff3193b9faba2dcce508">getTreeExecutionLevel</a> () const </td></tr>
+<tr class="separator:ae8f82f68e810ff3193b9faba2dcce508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b2029c94153119e4d28d21126e597c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#a89b2029c94153119e4d28d21126e597c">setValueIterator</a> (const <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#af607f22e4873b3369e942d9ebb3e72b1">IterType</a> &amp;iter)</td></tr>
+<tr class="memdesc:a89b2029c94153119e4d28d21126e597c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value iterator type to use with this executable. Options are ON, OFF, ALL. Default is ON.  <a href="#a89b2029c94153119e4d28d21126e597c">More...</a><br /></td></tr>
+<tr class="separator:a89b2029c94153119e4d28d21126e597c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed913e163e7bdd781632fbd21423d73b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#af607f22e4873b3369e942d9ebb3e72b1">IterType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#aed913e163e7bdd781632fbd21423d73b">getValueIterator</a> () const </td></tr>
+<tr class="separator:aed913e163e7bdd781632fbd21423d73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e503f6b9ee93a04fae7544305ad161"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#a65e503f6b9ee93a04fae7544305ad161">setGrainSize</a> (const size_t grain)</td></tr>
+<tr class="memdesc:a65e503f6b9ee93a04fae7544305ad161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the threading grain size. Default is 1. A value of 0 has the effect of disabling multi-threading.  <a href="#a65e503f6b9ee93a04fae7544305ad161">More...</a><br /></td></tr>
+<tr class="separator:a65e503f6b9ee93a04fae7544305ad161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60b0a96a503d6360bcdac038a60d5754"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#a60b0a96a503d6360bcdac038a60d5754">getGrainSize</a> () const </td></tr>
+<tr class="separator:a60b0a96a503d6360bcdac038a60d5754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bfe647fc97feba4c8a7313d1a8f42f4"><td class="memItemLeft" align="right" valign="top">OPENVDB_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#a2bfe647fc97feba4c8a7313d1a8f42f4">execute</a> (openvdb::GridPtrVec &amp;grids, const <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#af607f22e4873b3369e942d9ebb3e72b1">IterType</a> iter, const bool create) const </td></tr>
+<tr class="separator:a2bfe647fc97feba4c8a7313d1a8f42f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b15619543237a73b60b2cdf9e664f4b"><td class="memItemLeft" align="right" valign="top">OPENVDB_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#a9b15619543237a73b60b2cdf9e664f4b">execute</a> (openvdb::GridPtrVec &amp;grids, const <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#af607f22e4873b3369e942d9ebb3e72b1">IterType</a> iter) const </td></tr>
+<tr class="separator:a9b15619543237a73b60b2cdf9e664f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a5f904e96618a83d59208fb22cdf11ff5"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#a5f904e96618a83d59208fb22cdf11ff5">Compiler</a></td></tr>
+<tr class="separator:a5f904e96618a83d59208fb22cdf11ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8da9c82256fc211311bff5dfcdc1525"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#af8da9c82256fc211311bff5dfcdc1525">::TestVolumeExecutable</a></td></tr>
+<tr class="separator:af8da9c82256fc211311bff5dfcdc1525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Object that encapsulates compiled AX code which can be executed on a collection of VDB volume grids. </p>
@@ -168,7 +202,75 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a313ec3230fcaac23cc33493865737ca9"></a>
+<a class="anchor" id="ad814a17f6ae499ae481cd4593c5f4533"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">~<a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html">VolumeExecutable</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afecf152485d4534c5386e7244d15930b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html">VolumeExecutable</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html">VolumeExecutable</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy constructor. Shares the LLVM constructs but deep copies the settings. Multiple copies of an executor can be used at the same time safely. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a1a05061e87e8826cb21add59aa5611f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void execute </td>
+          <td>(</td>
+          <td class="paramtype">openvdb::GridPtrVec &amp;&#160;</td>
+          <td class="paramname"><em>grids</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Execute AX code on target grids. </p>
+
+</div>
+</div>
+<a class="anchor" id="a89ee78ccd4c14e3a9b1751c001fb055e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void execute </td>
+          <td>(</td>
+          <td class="paramtype">openvdb::GridBase &amp;&#160;</td>
+          <td class="paramname"><em>grid</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2bfe647fc97feba4c8a7313d1a8f42f4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -176,39 +278,27 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html">VolumeExecutable</a> </td>
+          <td class="memname">OPENVDB_DEPRECATED void execute </td>
           <td>(</td>
-          <td class="paramtype">const std::shared_ptr&lt; const llvm::ExecutionEngine &gt; &amp;&#160;</td>
-          <td class="paramname"><em>exeEngine</em>, </td>
+          <td class="paramtype">openvdb::GridPtrVec &amp;&#160;</td>
+          <td class="paramname"><em>grids</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::shared_ptr&lt; const llvm::LLVMContext &gt; &amp;&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
+          <td class="paramtype">const <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#af607f22e4873b3369e942d9ebb3e72b1">IterType</a>&#160;</td>
+          <td class="paramname"><em>iter</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1AttributeRegistry.html#af63be2e0846104fe046387102b5f0b00">AttributeRegistry::ConstPtr</a> &amp;&#160;</td>
-          <td class="paramname"><em>accessRegistry</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1CustomData.html#a4c48d1b9333a996951c1241d5986b7da">CustomData::ConstPtr</a> &amp;&#160;</td>
-          <td class="paramname"><em>customData</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::unordered_map&lt; std::string, uint64_t &gt; &amp;&#160;</td>
-          <td class="paramname"><em>functionAddresses</em>&#160;</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>create</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -218,22 +308,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constructor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">exeEngine</td><td>Shared pointer to an llvm::ExecutionEngine object used to build functions. context should be the associated llvm context </td></tr>
-    <tr><td class="paramname">context</td><td>Shared pointer to an llvm:context object associated with exeEngine </td></tr>
-    <tr><td class="paramname">accessRegistry</td><td>Registry of volumes accessed by AX code </td></tr>
-    <tr><td class="paramname">customData</td><td>Custom data object which will be shared by this executable. It can be used to retrieve external data from within the AX code </td></tr>
-    <tr><td class="paramname">functionAddresses</td><td>A Vector of maps of function names to physical memory addresses which were built by llvm using exeEngine </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>This object is normally be constructed by the <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1Compiler.html#a692af278108ac9f73eb47dce05d9250c" title="Compile/build a given AST into an executable object of the given type. ">Compiler::compile</a> method, rather than directly </dd></dl>
-
 </div>
 </div>
-<a class="anchor" id="a590ae3a01773611d83aac1cad5738cd9"></a>
+<a class="anchor" id="a9b15619543237a73b60b2cdf9e664f4b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -241,28 +318,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">~<a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html">VolumeExecutable</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ae1c9ddde899c40fe261068e45090a822"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void execute </td>
+          <td class="memname">OPENVDB_DEPRECATED void execute </td>
           <td>(</td>
           <td class="paramtype">openvdb::GridPtrVec &amp;&#160;</td>
           <td class="paramname"><em>grids</em>, </td>
@@ -271,13 +327,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#af607f22e4873b3369e942d9ebb3e72b1">IterType</a>&#160;</td>
-          <td class="paramname"><em>iterType</em> = <code><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#af607f22e4873b3369e942d9ebb3e72b1a90651ebea9a35ec4e018c8157492e17c">IterType::ON</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>createMissing</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>iter</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -285,9 +335,215 @@ Public Member Functions</h2></td></tr>
           <td></td><td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Execute AX code on target grids. </p>
+</div>
+</div>
+<a class="anchor" id="aff7ff8f5fe5c4cac499044795bd075ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool getCreateMissing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Whether this executable will generate new grids. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a60b0a96a503d6360bcdac038a60d5754"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t getGrainSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The current grain size </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae8f82f68e810ff3193b9faba2dcce508"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Index getTreeExecutionLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The tree execution level. Default is 0 i.e. the leaf level </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aed913e163e7bdd781632fbd21423d73b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#af607f22e4873b3369e942d9ebb3e72b1">IterType</a> getValueIterator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>The current value iterator type </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1ca28d3bd69799bef5435081d8ca285c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setCreateMissing </td>
+          <td>(</td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the behaviour when missing grids are accessed. Default behaviour is true, which creates them with default transforms and background values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flag</td><td>Enables or disables the creation of missing attributes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a65e503f6b9ee93a04fae7544305ad161"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setGrainSize </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>grain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the threading grain size. Default is 1. A value of 0 has the effect of disabling multi-threading. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grain</td><td>The grain size </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aeeba4e1c6cedbfda3fb609f8a9817ffe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setTreeExecutionLevel </td>
+          <td>(</td>
+          <td class="paramtype">const Index&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the execution level for this executable. This controls what nodes are processed when execute is called. Possible values depend on the OpenVDB configuration in use however a value of 0 is the default and will always correspond to the lowest level (leaf-level). </p>
+<dl class="section note"><dt>Note</dt><dd>A value larger that the number of levels in the tree (i.e. larger than the tree depth) will cause this method to throw a runtime error. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Executing over tiles with compiled code designed for voxel level access may produce incorrect results. This is typically the case when accessing VDBs with mismatching topology. Consider voxelizing tiles where necessary. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>The tree execution level to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a89b2029c94153119e4d28d21126e597c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setValueIterator </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1VolumeExecutable.html#af607f22e4873b3369e942d9ebb3e72b1">IterType</a> &amp;&#160;</td>
+          <td class="paramname"><em>iter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the value iterator type to use with this executable. Options are ON, OFF, ALL. Default is ON. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iter</td><td>The value iterator type to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="af8da9c82256fc211311bff5dfcdc1525"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class ::TestVolumeExecutable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f904e96618a83d59208fb22cdf11ff5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classopenvdb_1_1v7__0_1_1ax_1_1Compiler.html">Compiler</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

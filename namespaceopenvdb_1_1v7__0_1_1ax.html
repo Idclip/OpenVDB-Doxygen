@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">OpenVDB AX
-   &#160;<span id="projectnumber">0.2.0</span>
+   &#160;<span id="projectnumber">0.3.0</span>
    </div>
   </td>
  </tr>
@@ -146,18 +146,24 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a25a40b6614565f755233080a384c35f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceopenvdb_1_1v7__0_1_1ax.html#a25a40b6614565f755233080a384c35f1">initialize</a> ()</td></tr>
+<tr class="memdesc:a25a40b6614565f755233080a384c35f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes OpenVDB AX and subsequent LLVM components.  <a href="#a25a40b6614565f755233080a384c35f1">More...</a><br /></td></tr>
+<tr class="separator:a25a40b6614565f755233080a384c35f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04321e4762171080622518d52bc4624a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceopenvdb_1_1v7__0_1_1ax.html#a04321e4762171080622518d52bc4624a">isInitialized</a> ()</td></tr>
+<tr class="memdesc:a04321e4762171080622518d52bc4624a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check to see if OpenVDB AX components have been initialized.  <a href="#a04321e4762171080622518d52bc4624a">More...</a><br /></td></tr>
+<tr class="separator:a04321e4762171080622518d52bc4624a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770669d2fd0d66cd94b6687dba9db6d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceopenvdb_1_1v7__0_1_1ax.html#a770669d2fd0d66cd94b6687dba9db6d1">uninitialize</a> ()</td></tr>
+<tr class="memdesc:a770669d2fd0d66cd94b6687dba9db6d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uninitialize and deregister OpenVDB AX.  <a href="#a770669d2fd0d66cd94b6687dba9db6d1">More...</a><br /></td></tr>
+<tr class="separator:a770669d2fd0d66cd94b6687dba9db6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c133164071752a0029e8db674d3dec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceopenvdb_1_1v7__0_1_1ax.html#a76c133164071752a0029e8db674d3dec">run</a> (const char *ax, openvdb::GridBase &amp;grid)</td></tr>
+<tr class="memdesc:a76c133164071752a0029e8db674d3dec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a full AX pipeline (parse, compile and execute) on a single OpenVDB Grid.  <a href="#a76c133164071752a0029e8db674d3dec">More...</a><br /></td></tr>
+<tr class="separator:a76c133164071752a0029e8db674d3dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4eebbd04efb69ddb057b926ed41bd0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceopenvdb_1_1v7__0_1_1ax.html#af4eebbd04efb69ddb057b926ed41bd0f">run</a> (const char *ax, openvdb::GridPtrVec &amp;grids)</td></tr>
+<tr class="memdesc:af4eebbd04efb69ddb057b926ed41bd0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a full AX pipeline (parse, compile and execute) on a vector of OpenVDB numerical grids OR a vector of OpenVDB Point Data grids.  <a href="#af4eebbd04efb69ddb057b926ed41bd0f">More...</a><br /></td></tr>
+<tr class="separator:af4eebbd04efb69ddb057b926ed41bd0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae62f38a751974da8bee5902520a62303"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceopenvdb_1_1v7__0_1_1ax.html#ae62f38a751974da8bee5902520a62303">getLibraryVersionString</a> ()</td></tr>
 <tr class="memdesc:ae62f38a751974da8bee5902520a62303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a library version number string of the form "&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;".  <a href="#ae62f38a751974da8bee5902520a62303">More...</a><br /></td></tr>
 <tr class="separator:ae62f38a751974da8bee5902520a62303"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7812b9f26cf9da18a495f22f29ee0f4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceopenvdb_1_1v7__0_1_1ax.html#a7812b9f26cf9da18a495f22f29ee0f4b">initialize</a> ()</td></tr>
-<tr class="memdesc:a7812b9f26cf9da18a495f22f29ee0f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes llvm. Must be called before any AX compilation or execution is performed.  <a href="#a7812b9f26cf9da18a495f22f29ee0f4b">More...</a><br /></td></tr>
-<tr class="separator:a7812b9f26cf9da18a495f22f29ee0f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc8efb52dae48b6f6058ae50faa40445"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceopenvdb_1_1v7__0_1_1ax.html#afc8efb52dae48b6f6058ae50faa40445">isInitialized</a> ()</td></tr>
-<tr class="memdesc:afc8efb52dae48b6f6058ae50faa40445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check to see if llvm has been initialized.  <a href="#afc8efb52dae48b6f6058ae50faa40445">More...</a><br /></td></tr>
-<tr class="separator:afc8efb52dae48b6f6058ae50faa40445"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a189ffaa237caad60ca520c9aa604a805"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceopenvdb_1_1v7__0_1_1ax.html#a189ffaa237caad60ca520c9aa604a805">uninitialize</a> ()</td></tr>
-<tr class="memdesc:a189ffaa237caad60ca520c9aa604a805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shuts down llvm. Must be called on application termination.  <a href="#a189ffaa237caad60ca520c9aa604a805">More...</a><br /></td></tr>
-<tr class="separator:a189ffaa237caad60ca520c9aa604a805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -197,12 +203,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7812b9f26cf9da18a495f22f29ee0f4b"></a>
+<a class="anchor" id="a25a40b6614565f755233080a384c35f1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void openvdb::v7_0::ax::initialize </td>
+          <td class="memname">void initialize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -210,16 +216,18 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes llvm. Must be called before any AX compilation or execution is performed. </p>
+<p>Initializes OpenVDB AX and subsequent LLVM components. </p>
+<p>Initializes llvm. Must be called before any AX compilation or execution is performed.</p>
+<p>Must be called before any AX compilation or execution is performed. Can be safely called from multiple threads. Cannot be called after uninitialize has been called. </p><dl class="section note"><dt>Note</dt><dd>The implementation for the initialize methods can be found in compiler/Compiler.cc </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="afc8efb52dae48b6f6058ae50faa40445"></a>
+<a class="anchor" id="a04321e4762171080622518d52bc4624a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool openvdb::v7_0::ax::isInitialized </td>
+          <td class="memname">bool isInitialized </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -227,16 +235,95 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check to see if llvm has been initialized. </p>
+<p>Check to see if OpenVDB AX components have been initialized. </p>
+<p>Check to see if llvm has been initialized.</p>
+<dl class="section note"><dt>Note</dt><dd>Can be safely called from multiple threads. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a189ffaa237caad60ca520c9aa604a805"></a>
+<a class="anchor" id="a76c133164071752a0029e8db674d3dec"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void openvdb::v7_0::ax::uninitialize </td>
+          <td class="memname">void openvdb::v7_0::ax::run </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">openvdb::GridBase &amp;&#160;</td>
+          <td class="paramname"><em>grid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Run a full AX pipeline (parse, compile and execute) on a single OpenVDB Grid. </p>
+<p>This method wraps the parsing, compilation and execution of AX code for a single OpenVDB grid of any standard grid type (including OpenVDB Points Grids). Provided AX code is expected to only refer to the provided single grid. On success, the grid will have its voxels or point data modified as dictated by the provided AX code. </p><dl class="section note"><dt>Note</dt><dd>Various defaults are applied to this pipeline to provide a simple run signature. For OpenVDB Numerical grids, only active voxels are processed. For OpenVDB Points grids, all points are processed. Any warnings generated by the parser, compiler or executable will be ignored. </dd>
+<dd>
+Various runtime errors may be thrown from the different AX pipeline stages. See <a class="el" href="Exceptions_8h.html" title="OpenVDB AX Exceptions. ">Exceptions.h</a> for the possible different errors. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ax</td><td>The null terminated AX code string to parse and compile </td></tr>
+    <tr><td class="paramname">grid</td><td>The grid to which to apply the compiled AX function </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af4eebbd04efb69ddb057b926ed41bd0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void openvdb::v7_0::ax::run </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">openvdb::GridPtrVec &amp;&#160;</td>
+          <td class="paramname"><em>grids</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Run a full AX pipeline (parse, compile and execute) on a vector of OpenVDB numerical grids OR a vector of OpenVDB Point Data grids. </p>
+<p>This method wraps the parsing, compilation and execution of AX code for a vector of OpenVDB grids. The vector must contain either a set of any numerical grids supported by the default AX types OR a set of OpenVDB Points grids. On success, grids in the provided grid vector will be iterated over and updated if they are written to. </p><dl class="section warning"><dt>Warning</dt><dd>The type of grids provided changes the type of AX compilation. If the vector is empty, this function immediately returns with no other effect. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Various defaults are applied to this pipeline to provide a simple run signature. For numerical grids, only active voxels are processed and missing grid creation is disabled. For OpenVDB Points grids, all points are processed. Any warnings generated by the parser, compiler or executable will be ignored. </dd>
+<dd>
+Various runtime errors may be thrown from the different AX pipeline stages. See <a class="el" href="Exceptions_8h.html" title="OpenVDB AX Exceptions. ">Exceptions.h</a> for the possible different errors. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ax</td><td>The null terminated AX code string to parse and compile </td></tr>
+    <tr><td class="paramname">grids</td><td>The grids to which to apply the compiled AX function </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a770669d2fd0d66cd94b6687dba9db6d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void uninitialize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -244,7 +331,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Shuts down llvm. Must be called on application termination. </p>
+<p>Uninitialize and deregister OpenVDB AX. </p>
+<p>Shuts down llvm. Must be called on application termination.</p>
+<p>This has the important function of shutting down LLVM and correctly freeing statically allocated LLVM types. Should be called on application termination. Can be safely called from multiple threads. </p>
 
 </div>
 </div>
