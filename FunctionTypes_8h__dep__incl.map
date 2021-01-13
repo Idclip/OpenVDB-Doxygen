@@ -1,7 +1,0 @@
-<map id="FunctionTypes.h" name="FunctionTypes.h">
-<area shape="rect" id="node2" href="$FunctionRegistry_8h.html" title="Contains the global function registration definition which described all available user front end fun..." alt="" coords="81,80,212,107"/>
-<area shape="rect" id="node3" href="$ComputeGenerator_8h.html" title="The core visitor framework for code generation. " alt="" coords="179,155,321,181"/>
-<area shape="rect" id="node4" href="$PointComputeGenerator_8h.html" title="The visitor framework and function definition for point data grid code generation. " alt="" coords="5,229,179,256"/>
-<area shape="rect" id="node5" href="$VolumeComputeGenerator_8h.html" title="The visitor framework and function definition for volume grid code generation. " alt="" coords="212,229,399,256"/>
-<area shape="rect" id="node6" href="$Functions_8h.html" title="Contains the function objects that define the functions used in compute function generation, to be inserted into the FunctionRegistry. These define general purpose functions such as math functions. " alt="" coords="64,155,155,181"/>
-</map>

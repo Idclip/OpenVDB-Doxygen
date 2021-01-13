@@ -1,5 +1,0 @@
-<map id="SymbolTable.h" name="SymbolTable.h">
-<area shape="rect" id="node2" href="$ComputeGenerator_8h.html" title="The core visitor framework for code generation. " alt="" coords="122,80,264,107"/>
-<area shape="rect" id="node3" href="$PointComputeGenerator_8h.html" title="The visitor framework and function definition for point data grid code generation. " alt="" coords="5,155,179,181"/>
-<area shape="rect" id="node4" href="$VolumeComputeGenerator_8h.html" title="The visitor framework and function definition for volume grid code generation. " alt="" coords="203,155,389,181"/>
-</map>

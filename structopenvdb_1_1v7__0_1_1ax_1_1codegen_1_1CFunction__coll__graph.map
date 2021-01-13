@@ -1,4 +1,0 @@
-<map id="CFunction&lt; SignatureT &gt;" name="CFunction&lt; SignatureT &gt;">
-<area shape="rect" id="node2" href="$structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1CFunctionBase.html" title="The base class for all C bindings. " alt="" coords="33,80,145,107"/>
-<area shape="rect" id="node3" href="$structopenvdb_1_1v7__0_1_1ax_1_1codegen_1_1Function.html" title="The base/abstract representation of an AX function. Derived classes must implement the Function::type..." alt="" coords="53,5,125,32"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="FunctionRegistry.h" name="FunctionRegistry.h">
-<area shape="rect" id="node2" href="$ComputeGenerator_8h.html" title="The core visitor framework for code generation. " alt="" coords="122,80,264,107"/>
-<area shape="rect" id="node5" href="$Functions_8h.html" title="Contains the function objects that define the functions used in compute function generation, to be inserted into the FunctionRegistry. These define general purpose functions such as math functions. " alt="" coords="289,80,380,107"/>
-<area shape="rect" id="node3" href="$PointComputeGenerator_8h.html" title="The visitor framework and function definition for point data grid code generation. " alt="" coords="5,155,179,181"/>
-<area shape="rect" id="node4" href="$VolumeComputeGenerator_8h.html" title="The visitor framework and function definition for volume grid code generation. " alt="" coords="203,155,389,181"/>
-</map>

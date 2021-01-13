@@ -1,8 +1,0 @@
-<map id="CustomData.h" name="CustomData.h">
-<area shape="rect" id="node2" href="$Compiler_8h.html" title="The OpenVDB AX Compiler class provides methods to generate AX executables from a provided AX AST (or ..." alt="" coords="5,155,91,181"/>
-<area shape="rect" id="node4" href="$PointExecutable_8h.html" title="The PointExecutable, produced by the OpenVDB AX Compiler for execution over OpenVDB Points Grids..." alt="" coords="123,80,251,107"/>
-<area shape="rect" id="node6" href="$VolumeExecutable_8h.html" title="The VolumeExecutable, produced by the OpenVDB AX Compiler for execution over Numerical OpenVDB Grids..." alt="" coords="282,80,424,107"/>
-<area shape="rect" id="node3" href="$pyCompiler_8h.html" title="Python wrapper for compiler class. " alt="" coords="137,229,236,256"/>
-<area shape="rect" id="node5" href="$pyPointExecutable_8h.html" title="Python wrapper for PointExecutable. " alt="" coords="115,155,257,181"/>
-<area shape="rect" id="node7" href="$pyVolumeExecutable_8h.html" title="Python wrapper for VolumeExecutable. " alt="" coords="282,155,437,181"/>
-</map>
